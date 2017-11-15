@@ -1,0 +1,6 @@
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles/rebuild_cache.dir
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles/edit_cache.dir
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles/a4.dir
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/vecmath/CMakeFiles/rebuild_cache.dir
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/vecmath/CMakeFiles/edit_cache.dir
+/Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/vecmath/CMakeFiles/vecmath.dir
