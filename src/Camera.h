@@ -1,60 +1,77 @@
+// Arcball camera by Eugene Hsu
+// Based on 6.839 sample code for rotation code.
+// Extended to handle translation (MIDDLE) and scale (RIGHT)
+
+// -*-c++-*-
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "Ray.h"
-
 #include <vecmath.h>
-#include <float.h>
-#include <cmath>
+#include <cstdint>
 
 class Camera
 {
 public:
-    virtual ~Camera() {}
 
-    // Generate rays for each screen-space coordinate
-    virtual Ray generateRay(const Vector2f &point) = 0;
-    virtual float getTMin() const = 0;
-};
+    Camera();
+    
+    typedef enum { NONE, LEFT, MIDDLE, RIGHT } Button;
 
-/// Fill in functions and add more fields if necessary
-class PerspectiveCamera : public Camera
-{
-public:
-    PerspectiveCamera(const Vector3f &center,
-        const Vector3f &direction,
-        const Vector3f &up,
-        float angleradians) :
-        _center(center),
-        _direction(direction.normalized()),
-        _up(up),
-        _angle(angleradians)
-    {
-        _horizontal = Vector3f::cross(direction, up).normalized();
-    }
+    // You must call all of the Set*() functions before you use this!
+    // I didn't put it into the constructor because it's inconvenient
+    // to initialize stuff in my opengl application.
+    
+    void SetDimensions(int w, int h);
+    void SetViewport(int x, int y, int w, int h);
+    void SetPerspective(float fovy);
 
-    virtual Ray generateRay(const Vector2f &point) override
-    {
-        // BEGIN STARTER
-        float d = 1.0f / (float)std::tan(_angle / 2.0f);
-        Vector3f newDir = d * _direction + point[0] * _horizontal + point[1] * _up;
-        newDir = newDir.normalized();
+    // Call from whatever UI toolkit
+    void MouseClick(Button button, int x, int y);
+    void MouseDrag(int x, int y);
+    void MouseRelease(int x, int y);
 
-        return Ray(_center, newDir);
-        // END STARTER
-    }
+    // Apply viewport, perspective, and modeling
+    // use these instead of 
+    void ApplyViewport() const;
+	void SetUniforms(uint32_t program, Matrix4f M = Matrix4f::identity()) const;
 
-    virtual float getTMin() const override
-    {
-        return 0.01;
-    }
+    Matrix4f GetPerspective() const;
+    Matrix4f GetViewMatrix() const;
 
+    // Set for relevant vars
+    void SetCenter(const Vector3f& center);
+    void SetRotation(const Matrix4f& rotation);
+    void SetDistance(const float distance);
+
+    // Get for relevant vars
+    Vector3f GetCenter() const { return mCurrentCenter; }
+    Matrix4f GetRotation() const { return mCurrentRot; }
+    float GetDistance() const { return mCurrentDistance; }
+    
 private:
-    Vector3f _center;
-    Vector3f _direction;
-    Vector3f _up;
-    float _angle;
-    Vector3f _horizontal;
+
+    // States 
+    int     mDimensions[2];
+    int     mStartClick[2];
+    Button  mButtonState;
+
+    // For rotation
+    Matrix4f mStartRot;
+    Matrix4f mCurrentRot;
+
+    // For translation
+    float   mPerspective[2];
+    int     mViewport[4];
+    Vector3f mStartCenter;
+    Vector3f mCurrentCenter;
+
+    // For zoom
+    float   mStartDistance;
+    float   mCurrentDistance;
+
+    void ArcBallRotation(int x, int y);
+    void PlaneTranslation(int x, int y);
+    void DistanceZoom(int x, int y);
 };
 
-#endif //CAMERA_H
+#endif

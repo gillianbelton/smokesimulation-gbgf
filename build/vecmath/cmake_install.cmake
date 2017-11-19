@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/vecmath
+# Install script for directory: /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/vecmath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

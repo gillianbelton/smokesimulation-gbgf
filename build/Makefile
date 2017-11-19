@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.9.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4
+CMAKE_SOURCE_DIR = /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build
+CMAKE_BINARY_DIR = /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/build/CMakeFiles /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Gillian/Desktop/School/MIT17_18/6.837/assn4/starter4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a4
+# Target rules for targets named a3
 
 # Build rule for target.
-a4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 a4
-.PHONY : a4
+a3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a3
+.PHONY : a3
 
 # fast build rule for target.
-a4/fast:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/build
-.PHONY : a4/fast
+a3/fast:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/build
+.PHONY : a3/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) -f 3rd_party/glfw/src/CMakeFiles/glfw.dir/build.make 3rd_party/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
 
 #=============================================================================
 # Target rules for targets named vecmath
@@ -136,329 +149,59 @@ vecmath/fast:
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/build
 .PHONY : vecmath/fast
 
-src/ArgParser.o: src/ArgParser.cpp.o
+src/camera.o: src/camera.cpp.o
 
-.PHONY : src/ArgParser.o
-
-# target to build an object file
-src/ArgParser.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/ArgParser.cpp.o
-.PHONY : src/ArgParser.cpp.o
-
-src/ArgParser.i: src/ArgParser.cpp.i
-
-.PHONY : src/ArgParser.i
-
-# target to preprocess a source file
-src/ArgParser.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/ArgParser.cpp.i
-.PHONY : src/ArgParser.cpp.i
-
-src/ArgParser.s: src/ArgParser.cpp.s
-
-.PHONY : src/ArgParser.s
-
-# target to generate assembly for a file
-src/ArgParser.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/ArgParser.cpp.s
-.PHONY : src/ArgParser.cpp.s
-
-src/Camera.o: src/Camera.cpp.o
-
-.PHONY : src/Camera.o
+.PHONY : src/camera.o
 
 # target to build an object file
-src/Camera.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Camera.cpp.o
-.PHONY : src/Camera.cpp.o
+src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
 
-src/Camera.i: src/Camera.cpp.i
+src/camera.i: src/camera.cpp.i
 
-.PHONY : src/Camera.i
+.PHONY : src/camera.i
 
 # target to preprocess a source file
-src/Camera.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Camera.cpp.i
-.PHONY : src/Camera.cpp.i
+src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
 
-src/Camera.s: src/Camera.cpp.s
+src/camera.s: src/camera.cpp.s
 
-.PHONY : src/Camera.s
+.PHONY : src/camera.s
 
 # target to generate assembly for a file
-src/Camera.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Camera.cpp.s
-.PHONY : src/Camera.cpp.s
+src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
 
-src/CubeMap.o: src/CubeMap.cpp.o
+src/clothsystem.o: src/clothsystem.cpp.o
 
-.PHONY : src/CubeMap.o
+.PHONY : src/clothsystem.o
 
 # target to build an object file
-src/CubeMap.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/CubeMap.cpp.o
-.PHONY : src/CubeMap.cpp.o
+src/clothsystem.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.o
+.PHONY : src/clothsystem.cpp.o
 
-src/CubeMap.i: src/CubeMap.cpp.i
+src/clothsystem.i: src/clothsystem.cpp.i
 
-.PHONY : src/CubeMap.i
-
-# target to preprocess a source file
-src/CubeMap.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/CubeMap.cpp.i
-.PHONY : src/CubeMap.cpp.i
-
-src/CubeMap.s: src/CubeMap.cpp.s
-
-.PHONY : src/CubeMap.s
-
-# target to generate assembly for a file
-src/CubeMap.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/CubeMap.cpp.s
-.PHONY : src/CubeMap.cpp.s
-
-src/Image.o: src/Image.cpp.o
-
-.PHONY : src/Image.o
-
-# target to build an object file
-src/Image.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Image.cpp.o
-.PHONY : src/Image.cpp.o
-
-src/Image.i: src/Image.cpp.i
-
-.PHONY : src/Image.i
+.PHONY : src/clothsystem.i
 
 # target to preprocess a source file
-src/Image.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Image.cpp.i
-.PHONY : src/Image.cpp.i
+src/clothsystem.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.i
+.PHONY : src/clothsystem.cpp.i
 
-src/Image.s: src/Image.cpp.s
+src/clothsystem.s: src/clothsystem.cpp.s
 
-.PHONY : src/Image.s
-
-# target to generate assembly for a file
-src/Image.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Image.cpp.s
-.PHONY : src/Image.cpp.s
-
-src/Light.o: src/Light.cpp.o
-
-.PHONY : src/Light.o
-
-# target to build an object file
-src/Light.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Light.cpp.o
-.PHONY : src/Light.cpp.o
-
-src/Light.i: src/Light.cpp.i
-
-.PHONY : src/Light.i
-
-# target to preprocess a source file
-src/Light.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Light.cpp.i
-.PHONY : src/Light.cpp.i
-
-src/Light.s: src/Light.cpp.s
-
-.PHONY : src/Light.s
+.PHONY : src/clothsystem.s
 
 # target to generate assembly for a file
-src/Light.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Light.cpp.s
-.PHONY : src/Light.cpp.s
-
-src/Material.o: src/Material.cpp.o
-
-.PHONY : src/Material.o
-
-# target to build an object file
-src/Material.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Material.cpp.o
-.PHONY : src/Material.cpp.o
-
-src/Material.i: src/Material.cpp.i
-
-.PHONY : src/Material.i
-
-# target to preprocess a source file
-src/Material.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Material.cpp.i
-.PHONY : src/Material.cpp.i
-
-src/Material.s: src/Material.cpp.s
-
-.PHONY : src/Material.s
-
-# target to generate assembly for a file
-src/Material.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Material.cpp.s
-.PHONY : src/Material.cpp.s
-
-src/Mesh.o: src/Mesh.cpp.o
-
-.PHONY : src/Mesh.o
-
-# target to build an object file
-src/Mesh.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Mesh.cpp.o
-.PHONY : src/Mesh.cpp.o
-
-src/Mesh.i: src/Mesh.cpp.i
-
-.PHONY : src/Mesh.i
-
-# target to preprocess a source file
-src/Mesh.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Mesh.cpp.i
-.PHONY : src/Mesh.cpp.i
-
-src/Mesh.s: src/Mesh.cpp.s
-
-.PHONY : src/Mesh.s
-
-# target to generate assembly for a file
-src/Mesh.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Mesh.cpp.s
-.PHONY : src/Mesh.cpp.s
-
-src/Object3D.o: src/Object3D.cpp.o
-
-.PHONY : src/Object3D.o
-
-# target to build an object file
-src/Object3D.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Object3D.cpp.o
-.PHONY : src/Object3D.cpp.o
-
-src/Object3D.i: src/Object3D.cpp.i
-
-.PHONY : src/Object3D.i
-
-# target to preprocess a source file
-src/Object3D.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Object3D.cpp.i
-.PHONY : src/Object3D.cpp.i
-
-src/Object3D.s: src/Object3D.cpp.s
-
-.PHONY : src/Object3D.s
-
-# target to generate assembly for a file
-src/Object3D.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Object3D.cpp.s
-.PHONY : src/Object3D.cpp.s
-
-src/Octree.o: src/Octree.cpp.o
-
-.PHONY : src/Octree.o
-
-# target to build an object file
-src/Octree.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Octree.cpp.o
-.PHONY : src/Octree.cpp.o
-
-src/Octree.i: src/Octree.cpp.i
-
-.PHONY : src/Octree.i
-
-# target to preprocess a source file
-src/Octree.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Octree.cpp.i
-.PHONY : src/Octree.cpp.i
-
-src/Octree.s: src/Octree.cpp.s
-
-.PHONY : src/Octree.s
-
-# target to generate assembly for a file
-src/Octree.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Octree.cpp.s
-.PHONY : src/Octree.cpp.s
-
-src/Renderer.o: src/Renderer.cpp.o
-
-.PHONY : src/Renderer.o
-
-# target to build an object file
-src/Renderer.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Renderer.cpp.o
-.PHONY : src/Renderer.cpp.o
-
-src/Renderer.i: src/Renderer.cpp.i
-
-.PHONY : src/Renderer.i
-
-# target to preprocess a source file
-src/Renderer.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
-
-src/Renderer.s: src/Renderer.cpp.s
-
-.PHONY : src/Renderer.s
-
-# target to generate assembly for a file
-src/Renderer.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
-
-src/SceneParser.o: src/SceneParser.cpp.o
-
-.PHONY : src/SceneParser.o
-
-# target to build an object file
-src/SceneParser.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/SceneParser.cpp.o
-.PHONY : src/SceneParser.cpp.o
-
-src/SceneParser.i: src/SceneParser.cpp.i
-
-.PHONY : src/SceneParser.i
-
-# target to preprocess a source file
-src/SceneParser.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/SceneParser.cpp.i
-.PHONY : src/SceneParser.cpp.i
-
-src/SceneParser.s: src/SceneParser.cpp.s
-
-.PHONY : src/SceneParser.s
-
-# target to generate assembly for a file
-src/SceneParser.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/SceneParser.cpp.s
-.PHONY : src/SceneParser.cpp.s
-
-src/VecUtils.o: src/VecUtils.cpp.o
-
-.PHONY : src/VecUtils.o
-
-# target to build an object file
-src/VecUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/VecUtils.cpp.o
-.PHONY : src/VecUtils.cpp.o
-
-src/VecUtils.i: src/VecUtils.cpp.i
-
-.PHONY : src/VecUtils.i
-
-# target to preprocess a source file
-src/VecUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/VecUtils.cpp.i
-.PHONY : src/VecUtils.cpp.i
-
-src/VecUtils.s: src/VecUtils.cpp.s
-
-.PHONY : src/VecUtils.s
-
-# target to generate assembly for a file
-src/VecUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/VecUtils.cpp.s
-.PHONY : src/VecUtils.cpp.s
+src/clothsystem.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.s
+.PHONY : src/clothsystem.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -466,7 +209,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -475,7 +218,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -484,35 +227,170 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/stb.o: src/stb.cpp.o
+src/particlesystem.o: src/particlesystem.cpp.o
 
-.PHONY : src/stb.o
+.PHONY : src/particlesystem.o
 
 # target to build an object file
-src/stb.cpp.o:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/stb.cpp.o
-.PHONY : src/stb.cpp.o
+src/particlesystem.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.o
+.PHONY : src/particlesystem.cpp.o
 
-src/stb.i: src/stb.cpp.i
+src/particlesystem.i: src/particlesystem.cpp.i
 
-.PHONY : src/stb.i
+.PHONY : src/particlesystem.i
 
 # target to preprocess a source file
-src/stb.cpp.i:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/stb.cpp.i
-.PHONY : src/stb.cpp.i
+src/particlesystem.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.i
+.PHONY : src/particlesystem.cpp.i
 
-src/stb.s: src/stb.cpp.s
+src/particlesystem.s: src/particlesystem.cpp.s
 
-.PHONY : src/stb.s
+.PHONY : src/particlesystem.s
 
 # target to generate assembly for a file
-src/stb.cpp.s:
-	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/src/stb.cpp.s
-.PHONY : src/stb.cpp.s
+src/particlesystem.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.s
+.PHONY : src/particlesystem.cpp.s
+
+src/pendulumsystem.o: src/pendulumsystem.cpp.o
+
+.PHONY : src/pendulumsystem.o
+
+# target to build an object file
+src/pendulumsystem.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
+.PHONY : src/pendulumsystem.cpp.o
+
+src/pendulumsystem.i: src/pendulumsystem.cpp.i
+
+.PHONY : src/pendulumsystem.i
+
+# target to preprocess a source file
+src/pendulumsystem.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.i
+.PHONY : src/pendulumsystem.cpp.i
+
+src/pendulumsystem.s: src/pendulumsystem.cpp.s
+
+.PHONY : src/pendulumsystem.s
+
+# target to generate assembly for a file
+src/pendulumsystem.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.s
+.PHONY : src/pendulumsystem.cpp.s
+
+src/simplesystem.o: src/simplesystem.cpp.o
+
+.PHONY : src/simplesystem.o
+
+# target to build an object file
+src/simplesystem.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.o
+.PHONY : src/simplesystem.cpp.o
+
+src/simplesystem.i: src/simplesystem.cpp.i
+
+.PHONY : src/simplesystem.i
+
+# target to preprocess a source file
+src/simplesystem.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.i
+.PHONY : src/simplesystem.cpp.i
+
+src/simplesystem.s: src/simplesystem.cpp.s
+
+.PHONY : src/simplesystem.s
+
+# target to generate assembly for a file
+src/simplesystem.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.s
+.PHONY : src/simplesystem.cpp.s
+
+src/starter3_util.o: src/starter3_util.cpp.o
+
+.PHONY : src/starter3_util.o
+
+# target to build an object file
+src/starter3_util.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/starter3_util.cpp.o
+.PHONY : src/starter3_util.cpp.o
+
+src/starter3_util.i: src/starter3_util.cpp.i
+
+.PHONY : src/starter3_util.i
+
+# target to preprocess a source file
+src/starter3_util.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/starter3_util.cpp.i
+.PHONY : src/starter3_util.cpp.i
+
+src/starter3_util.s: src/starter3_util.cpp.s
+
+.PHONY : src/starter3_util.s
+
+# target to generate assembly for a file
+src/starter3_util.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/starter3_util.cpp.s
+.PHONY : src/starter3_util.cpp.s
+
+src/timestepper.o: src/timestepper.cpp.o
+
+.PHONY : src/timestepper.o
+
+# target to build an object file
+src/timestepper.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/timestepper.cpp.o
+.PHONY : src/timestepper.cpp.o
+
+src/timestepper.i: src/timestepper.cpp.i
+
+.PHONY : src/timestepper.i
+
+# target to preprocess a source file
+src/timestepper.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/timestepper.cpp.i
+.PHONY : src/timestepper.cpp.i
+
+src/timestepper.s: src/timestepper.cpp.s
+
+.PHONY : src/timestepper.s
+
+# target to generate assembly for a file
+src/timestepper.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/timestepper.cpp.s
+.PHONY : src/timestepper.cpp.s
+
+src/vertexrecorder.o: src/vertexrecorder.cpp.o
+
+.PHONY : src/vertexrecorder.o
+
+# target to build an object file
+src/vertexrecorder.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
+.PHONY : src/vertexrecorder.cpp.o
+
+src/vertexrecorder.i: src/vertexrecorder.cpp.i
+
+.PHONY : src/vertexrecorder.i
+
+# target to preprocess a source file
+src/vertexrecorder.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/vertexrecorder.cpp.i
+.PHONY : src/vertexrecorder.cpp.i
+
+src/vertexrecorder.s: src/vertexrecorder.cpp.s
+
+.PHONY : src/vertexrecorder.s
+
+# target to generate assembly for a file
+src/vertexrecorder.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/vertexrecorder.cpp.s
+.PHONY : src/vertexrecorder.cpp.s
 
 # Help Target
 help:
@@ -522,50 +400,36 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... a4"
+	@echo "... a3"
+	@echo "... glfw"
 	@echo "... vecmath"
-	@echo "... src/ArgParser.o"
-	@echo "... src/ArgParser.i"
-	@echo "... src/ArgParser.s"
-	@echo "... src/Camera.o"
-	@echo "... src/Camera.i"
-	@echo "... src/Camera.s"
-	@echo "... src/CubeMap.o"
-	@echo "... src/CubeMap.i"
-	@echo "... src/CubeMap.s"
-	@echo "... src/Image.o"
-	@echo "... src/Image.i"
-	@echo "... src/Image.s"
-	@echo "... src/Light.o"
-	@echo "... src/Light.i"
-	@echo "... src/Light.s"
-	@echo "... src/Material.o"
-	@echo "... src/Material.i"
-	@echo "... src/Material.s"
-	@echo "... src/Mesh.o"
-	@echo "... src/Mesh.i"
-	@echo "... src/Mesh.s"
-	@echo "... src/Object3D.o"
-	@echo "... src/Object3D.i"
-	@echo "... src/Object3D.s"
-	@echo "... src/Octree.o"
-	@echo "... src/Octree.i"
-	@echo "... src/Octree.s"
-	@echo "... src/Renderer.o"
-	@echo "... src/Renderer.i"
-	@echo "... src/Renderer.s"
-	@echo "... src/SceneParser.o"
-	@echo "... src/SceneParser.i"
-	@echo "... src/SceneParser.s"
-	@echo "... src/VecUtils.o"
-	@echo "... src/VecUtils.i"
-	@echo "... src/VecUtils.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
+	@echo "... src/clothsystem.o"
+	@echo "... src/clothsystem.i"
+	@echo "... src/clothsystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/stb.o"
-	@echo "... src/stb.i"
-	@echo "... src/stb.s"
+	@echo "... src/particlesystem.o"
+	@echo "... src/particlesystem.i"
+	@echo "... src/particlesystem.s"
+	@echo "... src/pendulumsystem.o"
+	@echo "... src/pendulumsystem.i"
+	@echo "... src/pendulumsystem.s"
+	@echo "... src/simplesystem.o"
+	@echo "... src/simplesystem.i"
+	@echo "... src/simplesystem.s"
+	@echo "... src/starter3_util.o"
+	@echo "... src/starter3_util.i"
+	@echo "... src/starter3_util.s"
+	@echo "... src/timestepper.o"
+	@echo "... src/timestepper.i"
+	@echo "... src/timestepper.s"
+	@echo "... src/vertexrecorder.o"
+	@echo "... src/vertexrecorder.i"
+	@echo "... src/vertexrecorder.s"
 .PHONY : help
 
 
