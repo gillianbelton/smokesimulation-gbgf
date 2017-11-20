@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/3rd_party/glfw/include -I/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/3rd_party/glfw/src -I/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/build/3rd_party/glfw/src 
+C_INCLUDES = -I/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/3rd_party/glfw/include -I/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/3rd_party/glfw/src -I/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/3rd_party/glfw/src 
 

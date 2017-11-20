@@ -86,59 +86,59 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/Spring.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/Spring.cpp
 Spring.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/Spring.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/Spring.h
 cassert
 -
 stdlib.h
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/Spring.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/Spring.h
 vector
 -
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.cpp
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 iostream
 -
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 vecmath.h
 -
 cstdint
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/clothsystem.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/clothsystem.cpp
 clothsystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/clothsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/clothsystem.h
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 vertexrecorder.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 Spring.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/Spring.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/Spring.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/clothsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/clothsystem.h
 vector
 -
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 OpenGL/gl3.h
 -
 GL/glew.h
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/main.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/main.cpp
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 GLFW/glfw3.h
 -
 cmath
@@ -152,33 +152,33 @@ iostream
 vector
 -
 vertexrecorder.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 starter3_util.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/starter3_util.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/starter3_util.h
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 timestepper.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/timestepper.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.h
 simplesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/simplesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/simplesystem.h
 pendulumsystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/pendulumsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/pendulumsystem.h
 clothsystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/clothsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/clothsystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.cpp
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 random
 -
 cstdio
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 vector
 -
 vecmath.h
@@ -186,45 +186,45 @@ vecmath.h
 cstdint
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/pendulumsystem.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/pendulumsystem.cpp
 pendulumsystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/pendulumsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/pendulumsystem.h
 cassert
 -
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 vertexrecorder.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 stdlib.h
 -
 Spring.cpp
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/Spring.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/Spring.cpp
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/pendulumsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/pendulumsystem.h
 vector
 -
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/simplesystem.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/simplesystem.cpp
 simplesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/simplesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/simplesystem.h
 camera.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/camera.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
 vertexrecorder.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/simplesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/simplesystem.h
 vector
 -
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/starter3_util.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/starter3_util.cpp
 starter3_util.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/starter3_util.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/starter3_util.h
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 GLFW/glfw3.h
 -
 cstdio
@@ -234,41 +234,41 @@ cstring
 cassert
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/starter3_util.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/starter3_util.h
 cstdint
 -
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/timestepper.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.cpp
 timestepper.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/timestepper.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.h
 cstdio
 -
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/timestepper.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.h
 vecmath.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vecmath.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vecmath.h
 vector
 -
 particlesystem.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/particlesystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.cpp
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.cpp
 vertexrecorder.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 cassert
 -
 cstdint
 -
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/vertexrecorder.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/vertexrecorder.h
 vector
 -
 vecmath.h
 -
 gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/src/gl.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 

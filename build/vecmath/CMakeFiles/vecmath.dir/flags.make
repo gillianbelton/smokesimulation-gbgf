@@ -6,5 +6,5 @@ CXX_FLAGS =  --std=gnu++11 -g -Wall -Wno-unused-variable
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Gillian/Desktop/School/MIT17_18/6.837/assn3/starter3/vecmath/include 
+CXX_INCLUDES = -I/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/vecmath/include 
 
