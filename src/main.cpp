@@ -14,6 +14,8 @@
 #include "simplesystem.h"
 #include "pendulumsystem.h"
 #include "clothsystem.h"
+#include "fluidsolver.cpp"
+#include "main2.cpp"
 
 using namespace std;
 
