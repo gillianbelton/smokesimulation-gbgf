@@ -12,14 +12,13 @@ Reference: Jos Stam, "Real-Time Fluid Dynamics for Games". Proceedings of the Ga
 
 void add_source ( int M, int N, int O, float * x, float * s, float dt )
 {
-	int i, size=(M+2)*(N+2)*(O+2);
-	for ( i=0 ; i<size ; i++ ) x[i] += dt*s[i];
+	int size=(M+2)*(N+2)*(O+2);
+	for (int i=0 ; i<size; i++) x[i] += dt*s[i];
 }
 
 void  set_bnd ( int M, int N, int O, int b, float * x )
 {
-
-        // bounds are cells at faces of the cube
+    // bounds are cells at faces of the cube
 
 	int i, j;
 

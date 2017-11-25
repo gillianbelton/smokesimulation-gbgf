@@ -26,7 +26,6 @@ void stepSystem();
 void drawSystem();
 void freeSystem();
 void resetTime();
-
 void initRendering();
 void drawAxis();
 
