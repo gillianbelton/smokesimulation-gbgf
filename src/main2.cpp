@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
+// #include "glutils/glut.h"
+// #include <GLUT/gl.h>
+// #include <GLUT/glu.h>
+#include <GLUT/glut.h>
 
 #define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k)) 
 #define MAX(a,b)            (((a) > (b)) ? (a) : (b))
@@ -535,14 +536,14 @@ static void open_glut_window ( void )
 }
 
 
-int main ( int argc, char ** argv )
-{
+// int main ( int argc, char ** argv )
+// {
 
-	glutInit ( &argc, argv );	
-	open_glut_window();
-	init();
-	glutMainLoop();
-	shutdown();
+// 	glutInit ( &argc, argv );	
+// 	open_glut_window();
+// 	init();
+// 	glutMainLoop();
+// 	shutdown();
 
-	return 0;
-}
+// 	return 0;
+// }

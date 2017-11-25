@@ -179,9 +179,7 @@ stdlib.h
 -
 math.h
 -
-gl.h
-/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
-GLFW/glfw3.h
+GLUT/glut.h
 -
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.cpp
