@@ -173,14 +173,6 @@ main2.cpp
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/main2.cpp
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/main2.cpp
-stdio.h
--
-stdlib.h
--
-math.h
--
-GLUT/glut.h
--
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.cpp
 particlesystem.h
