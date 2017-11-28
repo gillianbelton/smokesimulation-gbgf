@@ -4,6 +4,7 @@
 #include "vecmath.h"
 #include <vector>
 #include "particlesystem.h"
+#include "fluidsystem.h"
 
 class TimeStepper
 {

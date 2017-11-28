@@ -132,6 +132,16 @@ particlesystem.h
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
 
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
+vector
+-
+vecmath.h
+-
+cstdint
+-
+particlesystem.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
+
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
 OpenGL/gl3.h
 -
@@ -257,6 +267,8 @@ vector
 -
 particlesystem.h
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
+fluidsystem.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.cpp
 vertexrecorder.h

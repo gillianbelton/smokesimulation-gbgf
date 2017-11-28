@@ -42,6 +42,7 @@ CMakeFiles/a3.dir/src/main.cpp.o
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
+ /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/main.cpp
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
@@ -109,6 +110,7 @@ CMakeFiles/a3.dir/src/timestepper.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
+ /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.h
