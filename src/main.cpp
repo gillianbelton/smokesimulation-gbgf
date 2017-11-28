@@ -15,7 +15,6 @@
 #include "pendulumsystem.h"
 #include "clothsystem.h"
 #include "fluidsolver.cpp"
-#include "main2.cpp"
 // #include "glutils/glut.h"
 
 using namespace std;
