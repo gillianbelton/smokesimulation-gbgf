@@ -29,6 +29,7 @@ CMakeFiles/a3.dir/src/clothsystem.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/clothsystem.cpp.o: ../src/particlesystem.h
 CMakeFiles/a3.dir/src/clothsystem.cpp.o: ../src/vertexrecorder.h
 
+CMakeFiles/a3.dir/src/main.cpp.o: ../3rd_party/glfw/include/GLFW/glfw3.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix2f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix3f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix4f.h
@@ -37,23 +38,18 @@ CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector2f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector3f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector4f.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/vecmath.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/ArgParser.cpp
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/ArgParser.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Camera.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/CubeMap.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Image.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Light.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Material.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Mesh.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/ObjTriangle.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Object3D.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Octree.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Ray.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Renderer.cpp
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/Renderer.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/SceneParser.h
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/VecUtils.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/camera.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/clothsystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/fluidsolver.cpp
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/fluidsystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/particlesystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/pendulumsystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/simplesystem.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/starter3_util.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/timestepper.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/vertexrecorder.h
 
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../vecmath/include/Matrix2f.h
 CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../vecmath/include/Matrix3f.h
