@@ -40,6 +40,7 @@ if (NOT APPLE)
   SOURCE_GROUP(GLEW FILES 3rd_party/glew/src/glew.c)
 endif()
 
+set (SRC_DIR "ray_tracer/")
 
 # vecmath include directory
 include_directories(vecmath/include)
@@ -56,6 +57,19 @@ list (APPEND A3_SRC
   src/particlesystem.cpp
   src/pendulumsystem.cpp
   src/simplesystem.cpp
+  ${SRC_DIR}stb.cpp
+  ${SRC_DIR}ArgParser.cpp
+  ${SRC_DIR}Camera.cpp
+  ${SRC_DIR}CubeMap.cpp
+  ${SRC_DIR}Image.cpp
+  ${SRC_DIR}Light.cpp
+  ${SRC_DIR}Material.cpp
+  ${SRC_DIR}Mesh.cpp
+  ${SRC_DIR}Object3D.cpp
+  ${SRC_DIR}Octree.cpp
+  ${SRC_DIR}Renderer.cpp
+  ${SRC_DIR}SceneParser.cpp
+  ${SRC_DIR}VecUtils.cpp
 )
 list (APPEND A3_HEADER
   src/gl.h
@@ -67,6 +81,19 @@ list (APPEND A3_HEADER
   src/particlesystem.h
   src/pendulumsystem.h
   src/simplesystem.h
+  ${SRC_DIR}ArgParser.h
+  ${SRC_DIR}Camera.h
+  ${SRC_DIR}CubeMap.h
+  ${SRC_DIR}Image.h
+  ${SRC_DIR}Ray.h
+  ${SRC_DIR}Light.h
+  ${SRC_DIR}Material.h
+  ${SRC_DIR}Mesh.h
+  ${SRC_DIR}Object3D.h
+  ${SRC_DIR}Octree.h
+  ${SRC_DIR}Renderer.h
+  ${SRC_DIR}SceneParser.h
+  ${SRC_DIR}VecUtils.h
 )
 
 add_executable(a3 ${A3_SRC} ${A3_HEADER})
