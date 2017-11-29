@@ -24,17 +24,22 @@ namespace
 
 // Declarations of functions whose implementations occur later.
 void initSystem();
-void stepSystem();
+//void stepSystem();
 void drawSystem();
 void freeSystem();
 void resetTime();
 void initRendering();
 void drawAxis();
 
+
+
+
 // Some constants
 const Vector3f LIGHT_POS(3.0f, 3.0f, 5.0f);
 const Vector3f LIGHT_COLOR(120.0f, 120.0f, 120.0f);
 const Vector3f FLOOR_COLOR(1.0f, 0.0f, 0.0f);
+const int DIM = 3;
+vector<vector<vector<double>>> density_grid;
 
 // time keeping
 // current "tick" (e.g. clock number of processor)
@@ -190,6 +195,22 @@ void initSystem()
     pendulumSystem = new PendulumSystem();
     // TODO customize initialization of cloth system
     clothSystem = new ClothSystem(8);
+
+    density_grid.resize(DIM);
+    for (int i = 0; i < DIM; ++i) {
+        density_grid[i].resize(DIM);
+        for (int j = 0; j < DIM; ++j)
+        density_grid[i][j].resize(DIM);
+    }
+
+    for (int x = 0; x < DIM; ++x) {
+       for (int y = 0; y < DIM; ++y) {
+            for (int z = 0; z < DIM; ++z) {
+                density_grid[x][y][z] = 0.5f;
+            } 
+        } 
+    }
+    
 }
 
 void freeSystem() {
@@ -207,34 +228,34 @@ void resetTime() {
 
 // TODO: To add external forces like wind or turbulances,
 //       update the external forces before each time step
-void stepSystem()
-{
-    // step until simulated_s has caught up with elapsed_s.
-    while (simulated_s < elapsed_s) {
-        timeStepper->takeStep(simpleSystem, h);
-        timeStepper->takeStep(pendulumSystem, h);
-        timeStepper->takeStep(clothSystem, h);
-        simulated_s += h;
-    }
-}
+// void stepSystem()
+// {
+//     // step until simulated_s has caught up with elapsed_s.
+//     while (simulated_s < elapsed_s) {
+//         timeStepper->takeStep(simpleSystem, h);
+//         timeStepper->takeStep(pendulumSystem, h);
+//         timeStepper->takeStep(clothSystem, h);
+//         simulated_s += h;
+//     }
+// }
 
 // Draw the current particle positions
 void drawSystem()
 {
-    // GLProgram wraps up all object that
+    // GLProgram wraps up all objects that
     // particle systems need for drawing themselves
     GLProgram gl(program_light, program_color, &camera);
     gl.updateLight(LIGHT_POS, LIGHT_COLOR.xyz()); // once per frame
 
-    simpleSystem->draw(gl);
-    pendulumSystem->draw(gl);
-    clothSystem->draw(gl);
+    // simpleSystem->draw(gl);
+    // pendulumSystem->draw(gl);
+    // clothSystem->draw(gl);
 
     // set uniforms for floor
     gl.updateMaterial(FLOOR_COLOR);
-    gl.updateModelMatrix(Matrix4f::translation(0, -5.0f, 0));
+    gl.updateModelMatrix(Matrix4f::rotateX(M_PI/2.0));
     // draw floor
-    drawQuad(50.0f);
+    drawQuad(8.0f);
 }
 
 //-------------------------------------------------------------------
@@ -247,6 +268,76 @@ void initRendering()
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
+
+// Shader sources
+const GLchar* vertexSource = R"glsl(
+    #version 150 core
+    in vec2 position;
+
+    void main()
+    {
+        gl_Position = vec4(position, 0.0, 1.0);
+    }
+)glsl";
+const GLchar* fragmentSource = R"glsl(
+    #version 150 core
+    out vec4 outColor;
+
+    void main()
+    {
+        outColor = vec4(1.0, 1.0, 1.0, 1.0);
+    }
+)glsl";
+
+}
+
+int main1(int argc, char** argv) {
+
+    // ------------------------ my code ----------------------------------
+
+    GLFWwindow* window = createOpenGLWindow(1024, 1024, "Assignment 3");
+
+    float vertices[] = {
+     0.0f,  0.5f, // Vertex 1 (X, Y)
+     0.5f, -0.5f, // Vertex 2 (X, Y)
+    -0.5f, -0.5f  // Vertex 3 (X, Y)
+    };
+
+    GLuint vbo;
+    glGenBuffers(1, &vbo); // Generate 1 buffer
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(vertexShader, 1, &vertexSource, NULL);
+    glCompileShader(vertexShader);
+
+    GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShader, 1, &fragmentSource, NULL);
+    glCompileShader(fragmentShader);
+
+    GLuint shaderProgram = glCreateProgram();
+    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fragmentShader);
+
+    glBindFragDataLocation(shaderProgram, 0, "outColor");
+    glLinkProgram(shaderProgram);
+    glUseProgram(shaderProgram);
+
+    GLint posAttrib = glGetAttribLocation(shaderProgram, "position");
+    glVertexAttribPointer(posAttrib, 2, GL_FLOAT, GL_FALSE, 0, 0);
+    glEnableVertexAttribArray(posAttrib);
+
+
+    GLuint vao;
+    glGenVertexArrays(1, &vao);
+    glBindVertexArray(vao);
+
+    while( true ) { 
+        setViewport(window);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+        //glfwSwapBuffers(window);
+    }
 }
 
 // Main routine.
@@ -280,6 +371,7 @@ int main(int argc, char** argv)
 
     initRendering();
 
+
     // The program object controls the programmable parts
     // of OpenGL. All OpenGL programs define a vertex shader
     // and a fragment shader.
@@ -301,6 +393,8 @@ int main(int argc, char** argv)
     // Setup particle system
     initSystem();
 
+    
+
     // Main Loop
     uint64_t freq = glfwGetTimerFrequency();
     resetTime();
@@ -314,9 +408,9 @@ int main(int argc, char** argv)
             drawAxis();
         }
 
-        uint64_t now = glfwGetTimerValue();
-        elapsed_s = (double)(now - start_tick) / freq;
-        stepSystem();
+        //uint64_t now = glfwGetTimerValue();
+        //elapsed_s = (double)(now - start_tick) / freq;
+        //stepSystem();
 
         // Draw the simulation
         drawSystem();
@@ -336,3 +430,5 @@ int main(int argc, char** argv)
 
     return 0;	// This line is never reached.
 }
+
+

@@ -42,9 +42,9 @@ CMakeFiles/a3.dir/src/main.cpp.o
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/clothsystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsolver.cpp
+ /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/main.cpp
- /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/main2.cpp
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/pendulumsystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/simplesystem.h
@@ -110,6 +110,7 @@ CMakeFiles/a3.dir/src/timestepper.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
+ /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/particlesystem.h
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.cpp
  /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/timestepper.h

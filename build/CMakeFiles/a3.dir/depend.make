@@ -41,9 +41,9 @@ CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/vecmath.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/camera.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/clothsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/fluidsolver.cpp
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/fluidsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/gl.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/a3.dir/src/main.cpp.o: ../src/main2.cpp
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/particlesystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/pendulumsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/simplesystem.h
@@ -109,6 +109,7 @@ CMakeFiles/a3.dir/src/timestepper.cpp.o: ../vecmath/include/Vector2f.h
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../vecmath/include/Vector3f.h
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../vecmath/include/Vector4f.h
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../vecmath/include/vecmath.h
+CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/fluidsystem.h
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/particlesystem.h
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/timestepper.cpp
 CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/timestepper.h
