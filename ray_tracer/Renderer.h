@@ -1,16 +1,12 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 
-#include <string>
-
-#include "SceneParser.h"
-#include "ArgParser.h"
-
 using namespace std;
 
-class Hit;
+#include <string>
+#include <vector>
+
 class Vector3f;
-class Ray;
 
 class Renderer
 {

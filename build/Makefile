@@ -149,33 +149,6 @@ vecmath/fast:
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/build
 .PHONY : vecmath/fast
 
-ray_tracer/ArgParser.o: ray_tracer/ArgParser.cpp.o
-
-.PHONY : ray_tracer/ArgParser.o
-
-# target to build an object file
-ray_tracer/ArgParser.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o
-.PHONY : ray_tracer/ArgParser.cpp.o
-
-ray_tracer/ArgParser.i: ray_tracer/ArgParser.cpp.i
-
-.PHONY : ray_tracer/ArgParser.i
-
-# target to preprocess a source file
-ray_tracer/ArgParser.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.i
-.PHONY : ray_tracer/ArgParser.cpp.i
-
-ray_tracer/ArgParser.s: ray_tracer/ArgParser.cpp.s
-
-.PHONY : ray_tracer/ArgParser.s
-
-# target to generate assembly for a file
-ray_tracer/ArgParser.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.s
-.PHONY : ray_tracer/ArgParser.cpp.s
-
 ray_tracer/Camera.o: ray_tracer/Camera.cpp.o
 
 .PHONY : ray_tracer/Camera.o
@@ -418,33 +391,6 @@ ray_tracer/Renderer.s: ray_tracer/Renderer.cpp.s
 ray_tracer/Renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.s
 .PHONY : ray_tracer/Renderer.cpp.s
-
-ray_tracer/SceneParser.o: ray_tracer/SceneParser.cpp.o
-
-.PHONY : ray_tracer/SceneParser.o
-
-# target to build an object file
-ray_tracer/SceneParser.cpp.o:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o
-.PHONY : ray_tracer/SceneParser.cpp.o
-
-ray_tracer/SceneParser.i: ray_tracer/SceneParser.cpp.i
-
-.PHONY : ray_tracer/SceneParser.i
-
-# target to preprocess a source file
-ray_tracer/SceneParser.cpp.i:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.i
-.PHONY : ray_tracer/SceneParser.cpp.i
-
-ray_tracer/SceneParser.s: ray_tracer/SceneParser.cpp.s
-
-.PHONY : ray_tracer/SceneParser.s
-
-# target to generate assembly for a file
-ray_tracer/SceneParser.cpp.s:
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.s
-.PHONY : ray_tracer/SceneParser.cpp.s
 
 ray_tracer/VecUtils.o: ray_tracer/VecUtils.cpp.o
 
@@ -754,9 +700,6 @@ help:
 	@echo "... a3"
 	@echo "... glfw"
 	@echo "... vecmath"
-	@echo "... ray_tracer/ArgParser.o"
-	@echo "... ray_tracer/ArgParser.i"
-	@echo "... ray_tracer/ArgParser.s"
 	@echo "... ray_tracer/Camera.o"
 	@echo "... ray_tracer/Camera.i"
 	@echo "... ray_tracer/Camera.s"
@@ -784,9 +727,6 @@ help:
 	@echo "... ray_tracer/Renderer.o"
 	@echo "... ray_tracer/Renderer.i"
 	@echo "... ray_tracer/Renderer.s"
-	@echo "... ray_tracer/SceneParser.o"
-	@echo "... ray_tracer/SceneParser.i"
-	@echo "... ray_tracer/SceneParser.s"
 	@echo "... ray_tracer/VecUtils.o"
 	@echo "... ray_tracer/VecUtils.i"
 	@echo "... ray_tracer/VecUtils.s"

@@ -1,7 +1,6 @@
 #include <cstring>
 #include <iostream>
 
-#include "../../ray_tracer/ArgParser.h"
 #include "../../ray_tracer/Renderer.h"
 
 using namespace std;

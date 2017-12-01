@@ -58,7 +58,6 @@ list (APPEND A3_SRC
   src/pendulumsystem.cpp
   src/simplesystem.cpp
   ${SRC_DIR}stb.cpp
-  ${SRC_DIR}ArgParser.cpp
   ${SRC_DIR}Camera.cpp
   ${SRC_DIR}CubeMap.cpp
   ${SRC_DIR}Image.cpp
@@ -68,7 +67,6 @@ list (APPEND A3_SRC
   ${SRC_DIR}Object3D.cpp
   ${SRC_DIR}Octree.cpp
   ${SRC_DIR}Renderer.cpp
-  ${SRC_DIR}SceneParser.cpp
   ${SRC_DIR}VecUtils.cpp
 )
 list (APPEND A3_HEADER
@@ -81,7 +79,6 @@ list (APPEND A3_HEADER
   src/particlesystem.h
   src/pendulumsystem.h
   src/simplesystem.h
-  ${SRC_DIR}ArgParser.h
   ${SRC_DIR}Camera.h
   ${SRC_DIR}CubeMap.h
   ${SRC_DIR}Image.h
@@ -92,7 +89,6 @@ list (APPEND A3_HEADER
   ${SRC_DIR}Object3D.h
   ${SRC_DIR}Octree.h
   ${SRC_DIR}Renderer.h
-  ${SRC_DIR}SceneParser.h
   ${SRC_DIR}VecUtils.h
 )
 

@@ -297,33 +297,9 @@ CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/st
 CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o
 
 
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o: ../ray_tracer/ArgParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/ArgParser.cpp
-
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/ArgParser.cpp > CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.i
-
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/ArgParser.cpp -o CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.s
-
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.requires:
-
-.PHONY : CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.requires
-
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.provides
-
-CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o
-
-
 CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o: ../ray_tracer/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Camera.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Camera.cpp.i: cmake_force
@@ -347,7 +323,7 @@ CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.provides.build: CMakeFiles/a3.dir/ray_
 
 CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o: ../ray_tracer/CubeMap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/CubeMap.cpp
 
 CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.i: cmake_force
@@ -371,7 +347,7 @@ CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.provides.build: CMakeFiles/a3.dir/ray
 
 CMakeFiles/a3.dir/ray_tracer/Image.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Image.cpp.o: ../ray_tracer/Image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Image.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Image.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Image.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Image.cpp.i: cmake_force
@@ -395,7 +371,7 @@ CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.provides.build: CMakeFiles/a3.dir/ray_t
 
 CMakeFiles/a3.dir/ray_tracer/Light.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Light.cpp.o: ../ray_tracer/Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Light.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Light.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Light.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Light.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Light.cpp.i: cmake_force
@@ -419,7 +395,7 @@ CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.provides.build: CMakeFiles/a3.dir/ray_t
 
 CMakeFiles/a3.dir/ray_tracer/Material.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Material.cpp.o: ../ray_tracer/Material.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Material.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Material.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Material.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Material.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Material.cpp.i: cmake_force
@@ -443,7 +419,7 @@ CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.provides.build: CMakeFiles/a3.dir/ra
 
 CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o: ../ray_tracer/Mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Mesh.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.i: cmake_force
@@ -467,7 +443,7 @@ CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tr
 
 CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o: ../ray_tracer/Object3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Object3D.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.i: cmake_force
@@ -491,7 +467,7 @@ CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.provides.build: CMakeFiles/a3.dir/ra
 
 CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o: ../ray_tracer/Octree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Octree.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Octree.cpp.i: cmake_force
@@ -515,7 +491,7 @@ CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.provides.build: CMakeFiles/a3.dir/ray_
 
 CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o: ../ray_tracer/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Renderer.cpp
 
 CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.i: cmake_force
@@ -537,33 +513,9 @@ CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides: CMakeFiles/a3.dir/ray_trac
 CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o
 
 
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o: ../ray_tracer/SceneParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/SceneParser.cpp
-
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/SceneParser.cpp > CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.i
-
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/SceneParser.cpp -o CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.s
-
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.requires:
-
-.PHONY : CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.requires
-
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.provides
-
-CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o
-
-
 CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o: CMakeFiles/a3.dir/flags.make
 CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o: ../ray_tracer/VecUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o -c /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/VecUtils.cpp
 
 CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.i: cmake_force
@@ -597,7 +549,6 @@ a3_OBJECTS = \
 "CMakeFiles/a3.dir/src/pendulumsystem.cpp.o" \
 "CMakeFiles/a3.dir/src/simplesystem.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/stb.cpp.o" \
-"CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/Image.cpp.o" \
@@ -607,7 +558,6 @@ a3_OBJECTS = \
 "CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o" \
-"CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o" \
 "CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
 
 # External object files for target a3
@@ -623,7 +573,6 @@ a3: CMakeFiles/a3.dir/src/particlesystem.cpp.o
 a3: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
 a3: CMakeFiles/a3.dir/src/simplesystem.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o
-a3: CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o
@@ -633,13 +582,12 @@ a3: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o
-a3: CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o
 a3: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o
 a3: CMakeFiles/a3.dir/build.make
 a3: 3rd_party/glfw/src/libglfw3.a
 a3: vecmath/libvecmath.a
 a3: CMakeFiles/a3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable a3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable a3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -657,7 +605,6 @@ CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/particlesystem.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/simplesystem.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.requires
@@ -667,7 +614,6 @@ CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.requires
 
 .PHONY : CMakeFiles/a3.dir/requires

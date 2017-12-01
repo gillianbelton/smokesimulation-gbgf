@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/ArgParser.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/ArgParser.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Camera.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/CubeMap.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Image.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/Image.cpp.o"
@@ -14,7 +13,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Object3D.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Octree.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Renderer.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o"
-  "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/SceneParser.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/SceneParser.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/VecUtils.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/stb.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/ray_tracer/stb.cpp.o"
   "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/camera.cpp" "/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/build/CMakeFiles/a3.dir/src/camera.cpp.o"
