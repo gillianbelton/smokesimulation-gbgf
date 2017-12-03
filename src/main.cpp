@@ -35,6 +35,9 @@ main(int argc, const char *argv[])
         density_grid[i].resize(DIM);
         for (int j = 0; j < DIM; ++j)
             density_grid[i][j].resize(DIM);
+            // for (int k = 0; k < DIM; ++k) {
+            //     density_grid[i][j][k].resize(DIM);
+            // }
     }
 
     for (int x = 0; x < DIM; ++x) {
@@ -44,7 +47,7 @@ main(int argc, const char *argv[])
             } 
         } 
     }
-    float grid_dim = 4;
+    int grid_dim = 4;
     Renderer renderer(density_grid, grid_dim);
     renderer.Render();
     return 0;
