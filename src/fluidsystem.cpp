@@ -5,6 +5,7 @@
 #include "camera.h"
 #include <random>
 #include <cstdio>
+#include <vector>
 
 float rand_uniform(float low, float hi) {
    float abs = hi - low;
@@ -20,6 +21,24 @@ void FluidSystem::takeStep(float diff, float visc, float dt){
 
     vel_step (M, N, O, u, v, w, u_prev, v_prev, w_prev, visc, dt);
     dens_step (M, N, O, dens, dens_prev, u, v, w, diff, dt);
+}
+
+void FluidSystem::print() {
+    
+    for (int j = N - 1; j >= 0; j-=1) {
+        for (int i = 0; i < M; i+=1) {
+
+            float dens_sum = 0;
+            for (int k = 0; k < O; k+=1) {
+                dens_sum += densityAt(i, j, k);
+            }
+
+            printf(" %.4f", dens_sum);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
 }
 
 //TODO write hooks into fluidsystem rep, also allow force adding

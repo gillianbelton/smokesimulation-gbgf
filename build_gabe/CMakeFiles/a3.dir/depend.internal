@@ -171,6 +171,15 @@ CMakeFiles/a3.dir/src/fluidsystem.cpp.o
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
 CMakeFiles/a3.dir/src/main.cpp.o
  ../ray_tracer/Renderer.h
+ ../vecmath/include/Matrix2f.h
+ ../vecmath/include/Matrix3f.h
+ ../vecmath/include/Matrix4f.h
+ ../vecmath/include/Quat4f.h
+ ../vecmath/include/Vector2f.h
+ ../vecmath/include/Vector3f.h
+ ../vecmath/include/Vector4f.h
+ ../vecmath/include/vecmath.h
+ /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
  /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/main.cpp
 CMakeFiles/a3.dir/src/starter3_util.cpp.o
  ../3rd_party/glfw/include/GLFW/glfw3.h

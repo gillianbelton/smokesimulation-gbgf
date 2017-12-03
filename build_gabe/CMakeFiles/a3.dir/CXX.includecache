@@ -365,6 +365,8 @@ random
 -
 cstdio
 -
+vector
+-
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
 vector
@@ -385,6 +387,8 @@ cstring
 -
 iostream
 -
+fluidsystem.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
 ../../ray_tracer/Renderer.h
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/ray_tracer/Renderer.h
 

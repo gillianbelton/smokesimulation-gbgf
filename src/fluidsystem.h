@@ -13,14 +13,17 @@ struct GLProgram;
 class FluidSystem
 {
 public:
-
-    //TODO: create fluidsystem representation
-
+    
     virtual ~FluidSystem() {
     }
 
+    // Advance the system by one time step
     void takeStep(float diff, float visc, float dt);
 
+    // Debug the densities of the system
+    void print();
+
+    // Construct a new fluid system with dimensions M x N x O
     FluidSystem(int M, int N, int O)
         : M(M),
           N(N),
@@ -28,7 +31,7 @@ public:
         allocate_data();
     }
 
-
+    // Get the density of the fluid at a specific point
     float densityAt(int x, int y, int z) {
         return dens[IX(x, y, z)];
     }
