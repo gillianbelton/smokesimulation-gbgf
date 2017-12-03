@@ -149,6 +149,303 @@ vecmath/fast:
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/build
 .PHONY : vecmath/fast
 
+ray_tracer/Camera.o: ray_tracer/Camera.cpp.o
+
+.PHONY : ray_tracer/Camera.o
+
+# target to build an object file
+ray_tracer/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o
+.PHONY : ray_tracer/Camera.cpp.o
+
+ray_tracer/Camera.i: ray_tracer/Camera.cpp.i
+
+.PHONY : ray_tracer/Camera.i
+
+# target to preprocess a source file
+ray_tracer/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Camera.cpp.i
+.PHONY : ray_tracer/Camera.cpp.i
+
+ray_tracer/Camera.s: ray_tracer/Camera.cpp.s
+
+.PHONY : ray_tracer/Camera.s
+
+# target to generate assembly for a file
+ray_tracer/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Camera.cpp.s
+.PHONY : ray_tracer/Camera.cpp.s
+
+ray_tracer/CubeMap.o: ray_tracer/CubeMap.cpp.o
+
+.PHONY : ray_tracer/CubeMap.o
+
+# target to build an object file
+ray_tracer/CubeMap.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o
+.PHONY : ray_tracer/CubeMap.cpp.o
+
+ray_tracer/CubeMap.i: ray_tracer/CubeMap.cpp.i
+
+.PHONY : ray_tracer/CubeMap.i
+
+# target to preprocess a source file
+ray_tracer/CubeMap.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.i
+.PHONY : ray_tracer/CubeMap.cpp.i
+
+ray_tracer/CubeMap.s: ray_tracer/CubeMap.cpp.s
+
+.PHONY : ray_tracer/CubeMap.s
+
+# target to generate assembly for a file
+ray_tracer/CubeMap.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.s
+.PHONY : ray_tracer/CubeMap.cpp.s
+
+ray_tracer/Image.o: ray_tracer/Image.cpp.o
+
+.PHONY : ray_tracer/Image.o
+
+# target to build an object file
+ray_tracer/Image.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Image.cpp.o
+.PHONY : ray_tracer/Image.cpp.o
+
+ray_tracer/Image.i: ray_tracer/Image.cpp.i
+
+.PHONY : ray_tracer/Image.i
+
+# target to preprocess a source file
+ray_tracer/Image.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Image.cpp.i
+.PHONY : ray_tracer/Image.cpp.i
+
+ray_tracer/Image.s: ray_tracer/Image.cpp.s
+
+.PHONY : ray_tracer/Image.s
+
+# target to generate assembly for a file
+ray_tracer/Image.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Image.cpp.s
+.PHONY : ray_tracer/Image.cpp.s
+
+ray_tracer/Light.o: ray_tracer/Light.cpp.o
+
+.PHONY : ray_tracer/Light.o
+
+# target to build an object file
+ray_tracer/Light.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Light.cpp.o
+.PHONY : ray_tracer/Light.cpp.o
+
+ray_tracer/Light.i: ray_tracer/Light.cpp.i
+
+.PHONY : ray_tracer/Light.i
+
+# target to preprocess a source file
+ray_tracer/Light.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Light.cpp.i
+.PHONY : ray_tracer/Light.cpp.i
+
+ray_tracer/Light.s: ray_tracer/Light.cpp.s
+
+.PHONY : ray_tracer/Light.s
+
+# target to generate assembly for a file
+ray_tracer/Light.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Light.cpp.s
+.PHONY : ray_tracer/Light.cpp.s
+
+ray_tracer/Material.o: ray_tracer/Material.cpp.o
+
+.PHONY : ray_tracer/Material.o
+
+# target to build an object file
+ray_tracer/Material.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Material.cpp.o
+.PHONY : ray_tracer/Material.cpp.o
+
+ray_tracer/Material.i: ray_tracer/Material.cpp.i
+
+.PHONY : ray_tracer/Material.i
+
+# target to preprocess a source file
+ray_tracer/Material.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Material.cpp.i
+.PHONY : ray_tracer/Material.cpp.i
+
+ray_tracer/Material.s: ray_tracer/Material.cpp.s
+
+.PHONY : ray_tracer/Material.s
+
+# target to generate assembly for a file
+ray_tracer/Material.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Material.cpp.s
+.PHONY : ray_tracer/Material.cpp.s
+
+ray_tracer/Mesh.o: ray_tracer/Mesh.cpp.o
+
+.PHONY : ray_tracer/Mesh.o
+
+# target to build an object file
+ray_tracer/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o
+.PHONY : ray_tracer/Mesh.cpp.o
+
+ray_tracer/Mesh.i: ray_tracer/Mesh.cpp.i
+
+.PHONY : ray_tracer/Mesh.i
+
+# target to preprocess a source file
+ray_tracer/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.i
+.PHONY : ray_tracer/Mesh.cpp.i
+
+ray_tracer/Mesh.s: ray_tracer/Mesh.cpp.s
+
+.PHONY : ray_tracer/Mesh.s
+
+# target to generate assembly for a file
+ray_tracer/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.s
+.PHONY : ray_tracer/Mesh.cpp.s
+
+ray_tracer/Object3D.o: ray_tracer/Object3D.cpp.o
+
+.PHONY : ray_tracer/Object3D.o
+
+# target to build an object file
+ray_tracer/Object3D.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o
+.PHONY : ray_tracer/Object3D.cpp.o
+
+ray_tracer/Object3D.i: ray_tracer/Object3D.cpp.i
+
+.PHONY : ray_tracer/Object3D.i
+
+# target to preprocess a source file
+ray_tracer/Object3D.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.i
+.PHONY : ray_tracer/Object3D.cpp.i
+
+ray_tracer/Object3D.s: ray_tracer/Object3D.cpp.s
+
+.PHONY : ray_tracer/Object3D.s
+
+# target to generate assembly for a file
+ray_tracer/Object3D.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.s
+.PHONY : ray_tracer/Object3D.cpp.s
+
+ray_tracer/Octree.o: ray_tracer/Octree.cpp.o
+
+.PHONY : ray_tracer/Octree.o
+
+# target to build an object file
+ray_tracer/Octree.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o
+.PHONY : ray_tracer/Octree.cpp.o
+
+ray_tracer/Octree.i: ray_tracer/Octree.cpp.i
+
+.PHONY : ray_tracer/Octree.i
+
+# target to preprocess a source file
+ray_tracer/Octree.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Octree.cpp.i
+.PHONY : ray_tracer/Octree.cpp.i
+
+ray_tracer/Octree.s: ray_tracer/Octree.cpp.s
+
+.PHONY : ray_tracer/Octree.s
+
+# target to generate assembly for a file
+ray_tracer/Octree.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Octree.cpp.s
+.PHONY : ray_tracer/Octree.cpp.s
+
+ray_tracer/Renderer.o: ray_tracer/Renderer.cpp.o
+
+.PHONY : ray_tracer/Renderer.o
+
+# target to build an object file
+ray_tracer/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o
+.PHONY : ray_tracer/Renderer.cpp.o
+
+ray_tracer/Renderer.i: ray_tracer/Renderer.cpp.i
+
+.PHONY : ray_tracer/Renderer.i
+
+# target to preprocess a source file
+ray_tracer/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.i
+.PHONY : ray_tracer/Renderer.cpp.i
+
+ray_tracer/Renderer.s: ray_tracer/Renderer.cpp.s
+
+.PHONY : ray_tracer/Renderer.s
+
+# target to generate assembly for a file
+ray_tracer/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.s
+.PHONY : ray_tracer/Renderer.cpp.s
+
+ray_tracer/VecUtils.o: ray_tracer/VecUtils.cpp.o
+
+.PHONY : ray_tracer/VecUtils.o
+
+# target to build an object file
+ray_tracer/VecUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o
+.PHONY : ray_tracer/VecUtils.cpp.o
+
+ray_tracer/VecUtils.i: ray_tracer/VecUtils.cpp.i
+
+.PHONY : ray_tracer/VecUtils.i
+
+# target to preprocess a source file
+ray_tracer/VecUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.i
+.PHONY : ray_tracer/VecUtils.cpp.i
+
+ray_tracer/VecUtils.s: ray_tracer/VecUtils.cpp.s
+
+.PHONY : ray_tracer/VecUtils.s
+
+# target to generate assembly for a file
+ray_tracer/VecUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.s
+.PHONY : ray_tracer/VecUtils.cpp.s
+
+ray_tracer/stb.o: ray_tracer/stb.cpp.o
+
+.PHONY : ray_tracer/stb.o
+
+# target to build an object file
+ray_tracer/stb.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/stb.cpp.o
+.PHONY : ray_tracer/stb.cpp.o
+
+ray_tracer/stb.i: ray_tracer/stb.cpp.i
+
+.PHONY : ray_tracer/stb.i
+
+# target to preprocess a source file
+ray_tracer/stb.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/stb.cpp.i
+.PHONY : ray_tracer/stb.cpp.i
+
+ray_tracer/stb.s: ray_tracer/stb.cpp.s
+
+.PHONY : ray_tracer/stb.s
+
+# target to generate assembly for a file
+ray_tracer/stb.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/stb.cpp.s
+.PHONY : ray_tracer/stb.cpp.s
+
 src/camera.o: src/camera.cpp.o
 
 .PHONY : src/camera.o
@@ -403,6 +700,39 @@ help:
 	@echo "... a3"
 	@echo "... glfw"
 	@echo "... vecmath"
+	@echo "... ray_tracer/Camera.o"
+	@echo "... ray_tracer/Camera.i"
+	@echo "... ray_tracer/Camera.s"
+	@echo "... ray_tracer/CubeMap.o"
+	@echo "... ray_tracer/CubeMap.i"
+	@echo "... ray_tracer/CubeMap.s"
+	@echo "... ray_tracer/Image.o"
+	@echo "... ray_tracer/Image.i"
+	@echo "... ray_tracer/Image.s"
+	@echo "... ray_tracer/Light.o"
+	@echo "... ray_tracer/Light.i"
+	@echo "... ray_tracer/Light.s"
+	@echo "... ray_tracer/Material.o"
+	@echo "... ray_tracer/Material.i"
+	@echo "... ray_tracer/Material.s"
+	@echo "... ray_tracer/Mesh.o"
+	@echo "... ray_tracer/Mesh.i"
+	@echo "... ray_tracer/Mesh.s"
+	@echo "... ray_tracer/Object3D.o"
+	@echo "... ray_tracer/Object3D.i"
+	@echo "... ray_tracer/Object3D.s"
+	@echo "... ray_tracer/Octree.o"
+	@echo "... ray_tracer/Octree.i"
+	@echo "... ray_tracer/Octree.s"
+	@echo "... ray_tracer/Renderer.o"
+	@echo "... ray_tracer/Renderer.i"
+	@echo "... ray_tracer/Renderer.s"
+	@echo "... ray_tracer/VecUtils.o"
+	@echo "... ray_tracer/VecUtils.i"
+	@echo "... ray_tracer/VecUtils.s"
+	@echo "... ray_tracer/stb.o"
+	@echo "... ray_tracer/stb.i"
+	@echo "... ray_tracer/stb.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
