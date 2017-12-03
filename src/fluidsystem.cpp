@@ -1,5 +1,5 @@
+#include "fluidsolver.cpp"
 #include "fluidsystem.h"
-#include "particlesystem.h"
 
 #include "gl.h"
 #include "camera.h"
@@ -14,49 +14,16 @@ float rand_uniform(float low, float hi) {
    return f;
 }
 
-GLProgram::GLProgram(uint32_t apl, uint32_t apc, Camera* ac)
-    : program_light(apl), program_color(apc), camera(ac) 
-{
-    enableLighting();
-}
-void GLProgram::updateModelMatrix(Matrix4f M) const
-{
-    camera->SetUniforms(active_program, M);
-}
-void GLProgram::enableLighting() {
-    active_program = program_light;
-    glUseProgram(active_program);
-}
-void GLProgram::disableLighting() {
-    active_program = program_color;
-    glUseProgram(active_program);
-}
-void GLProgram::updateMaterial(Vector3f diffuseColor,
-    Vector3f ambientColor,
-    Vector3f specularColor,
-    float shininess,
-    float alpha) const {
-    int loc = glGetUniformLocation(active_program, "diffColor");
-    glUniform3fv(loc, 1, diffuseColor);
-    if (ambientColor.x() < 0) {
-        ambientColor = 0.15f * diffuseColor;
-    }
-    loc = glGetUniformLocation(active_program, "ambientColor");
-    glUniform3fv(loc, 1, ambientColor);
-    loc = glGetUniformLocation(active_program, "specColor");
-    glUniform3fv(loc, 1, specularColor);
-    loc = glGetUniformLocation(active_program, "shininess");
-    glUniform1f(loc, shininess);
-    loc = glGetUniformLocation(active_program, "alpha");
-    glUniform1f(loc, alpha);
+void takeStep(float diff, float visc, float dt){
+    // vel_step ( int M, int N, int O, float * u, float * v,  float * w, float * u0, float * v0, float * w0, float visc, float dt )
+    // dens_step ( int M, int N, int O, float * x, float * x0, float * u, float * v, float * w, float diff, float dt )\
+
+    vel_step (M, N, O, u, v, w, u0, v0, w0, visc, dt);
+    dens_step (M, N, O, x, x0, u, v, w, diff, dt);
 }
 
-void GLProgram::updateLight(Vector3f pos, Vector3f color) const {
-    int loc = glGetUniformLocation(active_program, "lightPos");
-    glUniform3fv(loc, 1, pos);
+//TODO write hooks into fluidsystem rep, also allow force adding
 
-    loc = glGetUniformLocation(active_program, "lightDiff");
-    glUniform3fv(loc, 1, color);
-}
+
 
 

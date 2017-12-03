@@ -5,10 +5,16 @@ Reference: Jos Stam, "Real-Time Fluid Dynamics for Games". Proceedings of the Ga
   *http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf]
 */
 
+// M, N, O represent dimensions of the grid
+// x is the density array
+// x0 is the density array from the previous time step
+// s is the density source
+
 #define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k))
 #define SWAP(x0,x) {float * tmp=x0;x0=x;x=tmp;}
 #define MAX(a,b)            (((a) > (b)) ? (a) : (b))
 #define LINEARSOLVERTIMES 10
+
 
 void add_source ( int M, int N, int O, float * x, float * s, float dt )
 {
