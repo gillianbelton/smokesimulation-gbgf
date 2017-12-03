@@ -52,11 +52,7 @@ list (APPEND A3_SRC
   src/starter3_util.cpp
   src/camera.cpp
   src/vertexrecorder.cpp
-  src/clothsystem.cpp
-  src/timestepper.cpp
-  src/particlesystem.cpp
-  src/pendulumsystem.cpp
-  src/simplesystem.cpp
+  src/fluidsystem.cpp
   ${SRC_DIR}stb.cpp
   ${SRC_DIR}Camera.cpp
   ${SRC_DIR}CubeMap.cpp
@@ -74,11 +70,7 @@ list (APPEND A3_HEADER
   src/starter3_util.h
   src/camera.h
   src/vertexrecorder.h
-  src/clothsystem.h
-  src/timestepper.h
-  src/particlesystem.h
-  src/pendulumsystem.h
-  src/simplesystem.h
+  src/fluidsystem.h
   ${SRC_DIR}Camera.h
   ${SRC_DIR}CubeMap.h
   ${SRC_DIR}Image.h

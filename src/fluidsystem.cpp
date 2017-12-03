@@ -14,12 +14,12 @@ float rand_uniform(float low, float hi) {
    return f;
 }
 
-void takeStep(float diff, float visc, float dt){
+void FluidSystem::takeStep(float diff, float visc, float dt){
     // vel_step ( int M, int N, int O, float * u, float * v,  float * w, float * u0, float * v0, float * w0, float visc, float dt )
-    // dens_step ( int M, int N, int O, float * x, float * x0, float * u, float * v, float * w, float diff, float dt )\
+    // dens_step ( int M, int N, int O, float * x, float * x0, float * u, float * v, float * w, float diff, float dt )
 
-    vel_step (M, N, O, u, v, w, u0, v0, w0, visc, dt);
-    dens_step (M, N, O, x, x0, u, v, w, diff, dt);
+    vel_step (M, N, O, u, v, w, u_prev, v_prev, w_prev, visc, dt);
+    dens_step (M, N, O, dens, dens_prev, u, v, w, diff, dt);
 }
 
 //TODO write hooks into fluidsystem rep, also allow force adding

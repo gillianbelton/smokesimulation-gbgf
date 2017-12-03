@@ -4,14 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Image.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Light.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Material.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/ray_tracer/stb.cpp.o"
   "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/camera.cpp.o"
-  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/clothsystem.cpp.o"
+  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/fluidsystem.cpp.o"
   "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/main.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/main.cpp.o"
-  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/particlesystem.cpp.o"
-  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/pendulumsystem.cpp.o"
-  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/simplesystem.cpp.o"
   "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/starter3_util.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/starter3_util.cpp.o"
-  "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/timestepper.cpp.o"
   "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.cpp" "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles/a3.dir/src/vertexrecorder.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")

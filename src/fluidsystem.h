@@ -19,7 +19,7 @@ public:
     virtual ~FluidSystem() {
     }
 
-    virtual void takeStep(float diff, float visc, float dt);
+    void takeStep(float diff, float visc, float dt);
 
     FluidSystem(int M, int N, int O)
         : M(M),

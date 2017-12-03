@@ -46,6 +46,12 @@ GL/glext.h
 GL/glu.h
 -
 
+../ray_tracer/Renderer.h
+string
+-
+vector
+-
+
 ../vecmath/include/Matrix2f.h
 cstdio
 -
@@ -86,19 +92,249 @@ Vector3f.h
 Vector4f.h
 ../vecmath/include/Vector4f.h
 
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/Spring.cpp
-Spring.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/Spring.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.cpp
+Camera.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.h
+Ray.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+vecmath.h
+-
+float.h
+-
+cmath
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.cpp
+CubeMap.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.h
+cmath
+-
+string
+-
+iostream
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.h
+Image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.h
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+string
+-
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+iostream
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.cpp
+cstdlib
+-
+cstdio
+-
+cstring
+-
 cassert
+-
+Image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.h
+stb_image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image.h
+stb_image_write.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image_write.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.h
+cassert
+-
+string
+-
+vector
+-
+vecmath.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/vecmath.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.cpp
+Light.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.h
+Vector3f.h
+-
+Object3D.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.h
+limits
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.cpp
+Material.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.h
+math.h
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.h
+cassert
+-
+vecmath.h
+-
+Ray.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+Image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.h
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+string
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.cpp
+Mesh.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.h
+fstream
+-
+iostream
+-
+algorithm
+-
+cstdlib
+-
+utility
+-
+sstream
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.h
+Object3D.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.h
+ObjTriangle.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/ObjTriangle.h
+Octree.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.h
+Vector2f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector2f.h
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+vector
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/ObjTriangle.h
+array
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.cpp
+Object3D.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.h
+limits
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.h
+Ray.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+Material.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.h
+string
+-
+cmath
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.cpp
+Ray.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+Mesh.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.h
+Octree.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.h
+vector
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+Vector3f.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Vector3f.h
+cassert
+-
+limits
+-
+iostream
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.cpp
+Renderer.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.h
+Camera.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.h
+Image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.h
+Ray.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
+limits
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.h
+string
+-
+vector
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.cpp
+VecUtils.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.h
+vecmath.h
+-
+algorithm
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb.cpp
+stb_image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image.h
+stb_image_write.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image_write.h
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image.h
+stb_image.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image.h
+stdio.h
+-
+stdarg.h
+-
+stddef.h
 -
 stdlib.h
 -
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/Spring.h
-vector
+string.h
 -
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb_image_write.h
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.cpp
 camera.h
@@ -114,23 +350,21 @@ vecmath.h
 cstdint
 -
 
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.cpp
-clothsystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
+
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.cpp
+fluidsolver.cpp
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
+fluidsystem.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
+gl.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
 camera.h
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
-vertexrecorder.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.h
-Spring.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/Spring.h
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.h
-vector
+random
 -
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
+cstdio
+-
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
 vector
@@ -147,90 +381,12 @@ GL/glew.h
 -
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/main.cpp
-gl.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
-GLFW/glfw3.h
--
-cmath
--
-cstdlib
--
-ctime
+cstring
 -
 iostream
 -
-vector
--
-vertexrecorder.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.h
-starter3_util.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/starter3_util.h
-camera.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
-timestepper.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.h
-simplesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.h
-pendulumsystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.h
-clothsystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.h
-fluidsolver.cpp
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsolver.cpp
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.cpp
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
-gl.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
-camera.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
-random
--
-cstdio
--
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
-vector
--
-vecmath.h
--
-cstdint
--
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.cpp
-pendulumsystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.h
-cassert
--
-camera.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
-vertexrecorder.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.h
-stdlib.h
--
-Spring.cpp
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/Spring.cpp
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.h
-vector
--
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.cpp
-simplesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.h
-camera.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/camera.h
-vertexrecorder.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.h
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.h
-vector
--
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
+../../ray_tracer/Renderer.h
+/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/ray_tracer/Renderer.h
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/starter3_util.cpp
 starter3_util.h
@@ -251,22 +407,6 @@ cstdint
 -
 gl.h
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/gl.h
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp
-timestepper.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.h
-cstdio
--
-
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.h
-vecmath.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vecmath.h
-vector
--
-particlesystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.h
-fluidsystem.h
-/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.h
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/vertexrecorder.cpp
 vertexrecorder.h

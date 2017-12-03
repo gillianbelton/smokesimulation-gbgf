@@ -153,124 +153,292 @@ CMakeFiles/a3.dir/src/vertexrecorder.cpp.o.provides: CMakeFiles/a3.dir/src/verte
 CMakeFiles/a3.dir/src/vertexrecorder.cpp.o.provides.build: CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
 
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/clothsystem.cpp.o: ../src/clothsystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a3.dir/src/clothsystem.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/clothsystem.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.cpp"
+CMakeFiles/a3.dir/src/fluidsystem.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/src/fluidsystem.cpp.o: ../src/fluidsystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a3.dir/src/fluidsystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/fluidsystem.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.cpp"
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/clothsystem.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.cpp" > CMakeFiles/a3.dir/src/clothsystem.cpp.i
+CMakeFiles/a3.dir/src/fluidsystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/fluidsystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.cpp" > CMakeFiles/a3.dir/src/fluidsystem.cpp.i
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/clothsystem.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/clothsystem.cpp" -o CMakeFiles/a3.dir/src/clothsystem.cpp.s
+CMakeFiles/a3.dir/src/fluidsystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/fluidsystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/fluidsystem.cpp" -o CMakeFiles/a3.dir/src/fluidsystem.cpp.s
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.o.requires:
+CMakeFiles/a3.dir/src/fluidsystem.cpp.o.requires:
 
-.PHONY : CMakeFiles/a3.dir/src/clothsystem.cpp.o.requires
+.PHONY : CMakeFiles/a3.dir/src/fluidsystem.cpp.o.requires
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.o.provides: CMakeFiles/a3.dir/src/clothsystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/clothsystem.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/src/clothsystem.cpp.o.provides
+CMakeFiles/a3.dir/src/fluidsystem.cpp.o.provides: CMakeFiles/a3.dir/src/fluidsystem.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/fluidsystem.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/src/fluidsystem.cpp.o.provides
 
-CMakeFiles/a3.dir/src/clothsystem.cpp.o.provides.build: CMakeFiles/a3.dir/src/clothsystem.cpp.o
-
-
-CMakeFiles/a3.dir/src/timestepper.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/timestepper.cpp.o: ../src/timestepper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a3.dir/src/timestepper.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/timestepper.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp"
-
-CMakeFiles/a3.dir/src/timestepper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/timestepper.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp" > CMakeFiles/a3.dir/src/timestepper.cpp.i
-
-CMakeFiles/a3.dir/src/timestepper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/timestepper.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/timestepper.cpp" -o CMakeFiles/a3.dir/src/timestepper.cpp.s
-
-CMakeFiles/a3.dir/src/timestepper.cpp.o.requires:
-
-.PHONY : CMakeFiles/a3.dir/src/timestepper.cpp.o.requires
-
-CMakeFiles/a3.dir/src/timestepper.cpp.o.provides: CMakeFiles/a3.dir/src/timestepper.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/timestepper.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/src/timestepper.cpp.o.provides
-
-CMakeFiles/a3.dir/src/timestepper.cpp.o.provides.build: CMakeFiles/a3.dir/src/timestepper.cpp.o
+CMakeFiles/a3.dir/src/fluidsystem.cpp.o.provides.build: CMakeFiles/a3.dir/src/fluidsystem.cpp.o
 
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/particlesystem.cpp.o: ../src/particlesystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a3.dir/src/particlesystem.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/particlesystem.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.cpp"
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.o: ../ray_tracer/stb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a3.dir/ray_tracer/stb.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/stb.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb.cpp"
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/particlesystem.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.cpp" > CMakeFiles/a3.dir/src/particlesystem.cpp.i
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/stb.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb.cpp" > CMakeFiles/a3.dir/ray_tracer/stb.cpp.i
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/particlesystem.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/particlesystem.cpp" -o CMakeFiles/a3.dir/src/particlesystem.cpp.s
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/stb.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/stb.cpp" -o CMakeFiles/a3.dir/ray_tracer/stb.cpp.s
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.o.requires:
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.requires:
 
-.PHONY : CMakeFiles/a3.dir/src/particlesystem.cpp.o.requires
+.PHONY : CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.requires
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.o.provides: CMakeFiles/a3.dir/src/particlesystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/particlesystem.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/src/particlesystem.cpp.o.provides
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides
 
-CMakeFiles/a3.dir/src/particlesystem.cpp.o.provides.build: CMakeFiles/a3.dir/src/particlesystem.cpp.o
-
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o: ../src/pendulumsystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/a3.dir/src/pendulumsystem.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/pendulumsystem.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.cpp"
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/pendulumsystem.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.cpp" > CMakeFiles/a3.dir/src/pendulumsystem.cpp.i
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/pendulumsystem.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/pendulumsystem.cpp" -o CMakeFiles/a3.dir/src/pendulumsystem.cpp.s
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.requires:
-
-.PHONY : CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.requires
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.provides: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.provides
-
-CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.provides.build: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
+CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o
 
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.o: CMakeFiles/a3.dir/flags.make
-CMakeFiles/a3.dir/src/simplesystem.cpp.o: ../src/simplesystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/a3.dir/src/simplesystem.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/src/simplesystem.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.cpp"
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o: ../ray_tracer/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.cpp"
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/src/simplesystem.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.cpp" > CMakeFiles/a3.dir/src/simplesystem.cpp.i
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Camera.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.cpp" > CMakeFiles/a3.dir/ray_tracer/Camera.cpp.i
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/src/simplesystem.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/src/simplesystem.cpp" -o CMakeFiles/a3.dir/src/simplesystem.cpp.s
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Camera.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Camera.cpp" -o CMakeFiles/a3.dir/ray_tracer/Camera.cpp.s
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.o.requires:
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.requires:
 
-.PHONY : CMakeFiles/a3.dir/src/simplesystem.cpp.o.requires
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.requires
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.o.provides: CMakeFiles/a3.dir/src/simplesystem.cpp.o.requires
-	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/src/simplesystem.cpp.o.provides.build
-.PHONY : CMakeFiles/a3.dir/src/simplesystem.cpp.o.provides
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.provides
 
-CMakeFiles/a3.dir/src/simplesystem.cpp.o.provides.build: CMakeFiles/a3.dir/src/simplesystem.cpp.o
+CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o: ../ray_tracer/CubeMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.cpp" > CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/CubeMap.cpp" -o CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.o: ../ray_tracer/Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Image.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.cpp" > CMakeFiles/a3.dir/ray_tracer/Image.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Image.cpp" -o CMakeFiles/a3.dir/ray_tracer/Image.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.o: ../ray_tracer/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Light.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Light.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Light.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.cpp" > CMakeFiles/a3.dir/ray_tracer/Light.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Light.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Light.cpp" -o CMakeFiles/a3.dir/ray_tracer/Light.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Light.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.o: ../ray_tracer/Material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Material.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Material.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Material.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.cpp" > CMakeFiles/a3.dir/ray_tracer/Material.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Material.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Material.cpp" -o CMakeFiles/a3.dir/ray_tracer/Material.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Material.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o: ../ray_tracer/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.cpp" > CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Mesh.cpp" -o CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o: ../ray_tracer/Object3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.cpp" > CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Object3D.cpp" -o CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o: ../ray_tracer/Octree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Octree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.cpp" > CMakeFiles/a3.dir/ray_tracer/Octree.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Octree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Octree.cpp" -o CMakeFiles/a3.dir/ray_tracer/Octree.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o: ../ray_tracer/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.cpp" > CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.cpp" -o CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o
+
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o: CMakeFiles/a3.dir/flags.make
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o: ../ray_tracer/VecUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o -c "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.cpp"
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.cpp" > CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.i
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/VecUtils.cpp" -o CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.s
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.requires:
+
+.PHONY : CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.requires
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.provides: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.provides.build
+.PHONY : CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.provides
+
+CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.provides.build: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o
 
 
 # Object files for target a3
@@ -279,11 +447,18 @@ a3_OBJECTS = \
 "CMakeFiles/a3.dir/src/starter3_util.cpp.o" \
 "CMakeFiles/a3.dir/src/camera.cpp.o" \
 "CMakeFiles/a3.dir/src/vertexrecorder.cpp.o" \
-"CMakeFiles/a3.dir/src/clothsystem.cpp.o" \
-"CMakeFiles/a3.dir/src/timestepper.cpp.o" \
-"CMakeFiles/a3.dir/src/particlesystem.cpp.o" \
-"CMakeFiles/a3.dir/src/pendulumsystem.cpp.o" \
-"CMakeFiles/a3.dir/src/simplesystem.cpp.o"
+"CMakeFiles/a3.dir/src/fluidsystem.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/stb.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Image.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Light.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Material.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o" \
+"CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o"
 
 # External object files for target a3
 a3_EXTERNAL_OBJECTS =
@@ -292,16 +467,23 @@ a3: CMakeFiles/a3.dir/src/main.cpp.o
 a3: CMakeFiles/a3.dir/src/starter3_util.cpp.o
 a3: CMakeFiles/a3.dir/src/camera.cpp.o
 a3: CMakeFiles/a3.dir/src/vertexrecorder.cpp.o
-a3: CMakeFiles/a3.dir/src/clothsystem.cpp.o
-a3: CMakeFiles/a3.dir/src/timestepper.cpp.o
-a3: CMakeFiles/a3.dir/src/particlesystem.cpp.o
-a3: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o
-a3: CMakeFiles/a3.dir/src/simplesystem.cpp.o
+a3: CMakeFiles/a3.dir/src/fluidsystem.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Light.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Material.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o
+a3: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o
 a3: CMakeFiles/a3.dir/build.make
 a3: 3rd_party/glfw/src/libglfw3.a
 a3: vecmath/libvecmath.a
 a3: CMakeFiles/a3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable a3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/build_gabe/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable a3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -313,11 +495,18 @@ CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/main.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/starter3_util.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/camera.cpp.o.requires
 CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/vertexrecorder.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/clothsystem.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/timestepper.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/particlesystem.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/pendulumsystem.cpp.o.requires
-CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/simplesystem.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/src/fluidsystem.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/stb.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Camera.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/CubeMap.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Image.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Light.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Material.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Mesh.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Object3D.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Octree.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/Renderer.cpp.o.requires
+CMakeFiles/a3.dir/requires: CMakeFiles/a3.dir/ray_tracer/VecUtils.cpp.o.requires
 
 .PHONY : CMakeFiles/a3.dir/requires
 
