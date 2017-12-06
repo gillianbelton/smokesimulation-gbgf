@@ -51,14 +51,14 @@ public:
     {
         int size = (M+2)*(N+2)*(O+2);
 
-        u           = (float *) malloc ( size*sizeof(float) );
-        v           = (float *) malloc ( size*sizeof(float) );
-        w           = (float *) malloc ( size*sizeof(float) );
-        u_prev      = (float *) malloc ( size*sizeof(float) );
-        v_prev      = (float *) malloc ( size*sizeof(float) );
-        w_prev      = (float *) malloc ( size*sizeof(float) );
-        dens        = (float *) malloc ( size*sizeof(float) );  
-        dens_prev   = (float *) malloc ( size*sizeof(float) );
+        // u           = (float *) malloc ( size*sizeof(float) );
+        // v           = (float *) malloc ( size*sizeof(float) );
+        // w           = (float *) malloc ( size*sizeof(float) );
+        // u_prev      = (float *) malloc ( size*sizeof(float) );
+        // v_prev      = (float *) malloc ( size*sizeof(float) );
+        // w_prev      = (float *) malloc ( size*sizeof(float) );
+        // dens        = (float *) malloc ( size*sizeof(float) );  
+        // dens_prev   = (float *) malloc ( size*sizeof(float) );
 
         if ( !u || !v || !w || !u_prev || !v_prev || !w_prev || !dens || !dens_prev ) {
             fprintf ( stderr, "cannot allocate data\n" );

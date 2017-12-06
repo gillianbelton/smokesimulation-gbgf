@@ -22,7 +22,11 @@ main(int argc, const char *argv[])
     for (int x = 0; x < DIM; ++x) {
        for (int y = 0; y < DIM; ++y) {
             for (int z = 0; z < DIM; ++z) {
-                density_grid[x][y][z] = 0.5f;
+                if (x > 1) {
+                    density_grid[x][y][z] = 0.8f;
+                } else {
+                    density_grid[x][y][z] = 0.3f; 
+                }
             } 
         } 
     }
