@@ -21,30 +21,25 @@ void Renderer::Render()
 {
     Image image(_pic_width, _pic_width);
 
-    for (int y = 0; y < _grid_width; ++y) {
-        for (int x = 0; x < _grid_width; ++x) {
+    for (int x = 0; x < _grid_width; ++x) {
+        for (int y = 0; y < _grid_width; ++y) {
             Vector3f color = getDensity(x, y);
-            for (int i = 0; i < 100; ++i) {                
-                image.setPixel(x*100 + i, y*100 + i, color); 
+            for (int i = 0; i < 100; ++i) { 
+                for (int j = 0; j < 100; ++j) {
+                    image.setPixel(x*100 + i, y*100 + j, color); 
+                }
             }           
         }
     }
-
     image.savePNG("SMOKE.png");
 }
 
 Vector3f Renderer::getDensity(int x, int y) {
-    printf("x,y = %i, %i\n", x, y);
     float total = 0;
     for (int z = 0; z < _grid_width; ++z) {
-        if (x == 3)
-            printf("z = %i\n", z);
         total += _density_grid[x][y][z];
-
     }
-    printf("made it out!\n");
     total /= _grid_width;
-
     return Vector3f(total, total, total);
 }
 
