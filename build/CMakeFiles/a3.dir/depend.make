@@ -170,6 +170,15 @@ CMakeFiles/a3.dir/src/fluidsystem.cpp.o: ../src/fluidsystem.h
 CMakeFiles/a3.dir/src/fluidsystem.cpp.o: ../src/gl.h
 
 CMakeFiles/a3.dir/src/main.cpp.o: ../ray_tracer/Renderer.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix2f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix3f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Matrix4f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Quat4f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector2f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector3f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/Vector4f.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../vecmath/include/vecmath.h
+CMakeFiles/a3.dir/src/main.cpp.o: ../src/fluidsystem.h
 CMakeFiles/a3.dir/src/main.cpp.o: ../src/main.cpp
 
 CMakeFiles/a3.dir/src/starter3_util.cpp.o: ../3rd_party/glfw/include/GLFW/glfw3.h

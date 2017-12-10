@@ -375,6 +375,8 @@ vecmath.h
 -
 cstdint
 -
+stdlib.h
+-
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
 OpenGL/gl3.h
@@ -387,6 +389,8 @@ cstring
 -
 iostream
 -
+fluidsystem.h
+/Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsystem.h
 ../../ray_tracer/Renderer.h
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/ray_tracer/Renderer.h
 
