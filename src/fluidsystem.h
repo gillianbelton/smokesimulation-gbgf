@@ -31,6 +31,17 @@ public:
         allocate_data();
     }
 
+    // Set the densities everywhere to a specific value
+    void setDensityUniform(float densVal) {
+        for (int i = 0; i < M; i += 1) {
+            for (int j = 0; j < N; j += 1) {
+                for (int k = 0; k < O; k+= 1) {
+                    dens[IX(i, j, k)] = densVal;
+                }
+            }
+        }
+    }
+
     // Get the density of the fluid at a specific point
     float densityAt(int x, int y, int z) {
         return dens[IX(x, y, z)];
