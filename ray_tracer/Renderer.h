@@ -13,7 +13,7 @@ class Renderer
   public:
     // Instantiates a renderer for the given scene.
     Renderer(vector<vector<vector<float>>> dg, int grid_dim);
-    void Render();
+    void Render(string filename);
     Vector3f getDensity(int x, int y);
     vector<vector<vector<float>>> _density_grid;
     int _grid_width;

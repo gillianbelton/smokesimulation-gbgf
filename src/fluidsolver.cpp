@@ -19,7 +19,16 @@ Reference: Jos Stam, "Real-Time Fluid Dynamics for Games". Proceedings of the Ga
 void add_source ( int M, int N, int O, float * x, float * s, float dt )
 {
 	int size=(M+2)*(N+2)*(O+2);
-	for (int i=0 ; i<size; i++) x[i] += dt*s[i];
+	int width = 5;
+	int height = 5;
+	//for (int i=0 ; i<size; i++) x[i] += dt*s[i];
+	for (int i = 0; i < width; ++i) {
+		for (int j = 0; j < height; ++j) {
+			int index = IX(i, j, 0);
+			x[index] += dt*s[i];
+			//unsure of how to deal with u,v,w
+		}
+	}
 }
 
 void  set_bnd ( int M, int N, int O, int b, float * x )

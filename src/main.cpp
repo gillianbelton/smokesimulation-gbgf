@@ -7,6 +7,7 @@
 using namespace std;
 
 const int DIM = 15;
+const int NUM_STEP = 5;
 vector<vector<vector<float>>> density_grid;
 
 int
@@ -22,24 +23,28 @@ main(int argc, const char *argv[])
             density_grid[i][j].resize(DIM);
     }
 
-    // Take fluid system steps
-    for (int i = 0; i < 5; i+= 1)
-    {
-        printf("step");
-        fluidSystem.takeStep(0.0f, 0.0f, 0.4f);
-    }
+    for (int i = 0; i < NUM_STEP; ++i) {
 
-    // Store fluid system values into density grid
-    for (int x = 0; x < DIM; ++x) {
-       for (int y = 0; y < DIM; ++y) {
-            for (int z = 0; z < DIM; ++z) {
-                density_grid[x][y][z] = fluidSystem.densityAt(x, y, z);
+        string filename = "smoke_file_" + i;
+        // Take fluid system steps
+        for (int j = 0; j < 5; j+= 1)
+        {
+            //printf("step\n");
+            fluidSystem.takeStep(0.0f, 0.0f, 0.4f);
+        }
+
+        // Store fluid system values into density grid
+        for (int x = 0; x < DIM; ++x) {
+           for (int y = 0; y < DIM; ++y) {
+                for (int z = 0; z < DIM; ++z) {
+                    density_grid[x][y][z] = fluidSystem.densityAt(x, y, z);
+                } 
             } 
-        } 
+        }
+
+        Renderer renderer(density_grid, DIM);
+        renderer.Render(filename);
     }
 
-
-    Renderer renderer(density_grid, DIM);
-    renderer.Render();
     return 0;
 }

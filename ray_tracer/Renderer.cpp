@@ -17,7 +17,7 @@ Renderer::Renderer(vector<vector<vector<float>>> dg, int grid_dim) :
 }
 
 
-void Renderer::Render()
+void Renderer::Render(string filename)
 {
     Image image(_pic_width, _pic_width);
 
@@ -31,7 +31,7 @@ void Renderer::Render()
             }           
         }
     }
-    image.savePNG("SMOKE.png");
+    image.savePNG(filename);
 }
 
 Vector3f Renderer::getDensity(int x, int y) {
