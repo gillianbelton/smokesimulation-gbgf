@@ -6,8 +6,8 @@
 
 using namespace std;
 
-const int DIM = 15;
-const int NUM_STEP = 5;
+const int DIM = 50;
+const int NUM_STEP = 10;
 vector<vector<vector<float>>> density_grid;
 
 int
@@ -26,9 +26,10 @@ main(int argc, const char *argv[])
 
     for (int i = 0; i < NUM_STEP; ++i) {
 
-        string filename = "smoke_file_" + i;
+        string filename = "smoke_file_" + std::to_string(i) + ".png";
+        printf("filename: %s\n", filename.c_str());
         // Take fluid system steps
-        for (int j = 0; j < 5; j+= 1)
+        for (int j = 0; j < 13; j+= 1)
         {
             //printf("step\n");
             fluidSystem.takeStep(0.001f, 0.0f, 0.4f);
