@@ -7,6 +7,7 @@
 #include <cstdio>
 #include <vector>
 
+
 #define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k))
 
 float rand_uniform(float low, float hi) {
@@ -20,7 +21,7 @@ float rand_uniform(float low, float hi) {
 void FluidSystem::takeStep(float diff, float visc, float dt){
     // vel_step ( int M, int N, int O, float * u, float * v,  float * w, float * u0, float * v0, float * w0, float visc, float dt )
     // dens_step ( int M, int N, int O, float * x, float * x0, float * u, float * v, float * w, float diff, float dt )
-    dens_source[IX(M/2,N/2,O/2)] = 100;
+    //dens_source[IX(M/2,N/2,O/2)] = 100;
     vel_step (M, N, O, u, v, w, u_source, v_source, w_source, visc, dt);
     dens_step (M, N, O, dens, dens_source, u, v, w, diff, dt);
 }

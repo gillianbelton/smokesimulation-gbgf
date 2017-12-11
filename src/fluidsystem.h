@@ -30,6 +30,25 @@ public:
           N(N),
           O(O) {
         allocate_data();
+
+        if (doSphere) {
+            //Create sphere size, position
+            sphere_radius = M / 4;
+            sphere_center = Vector3f(M/2, N/2, O/2);
+
+            //Populate sphere with density, velocity
+            for (int i = 0; i < M; i += 1) {
+                for (int j = 0; j < N; j += 1) {
+                    for (int k = 0; k < O; k+= 1) {
+                        Vector3f pos = Vector3f(i,j,k);
+                        if ((pos - sphere_center).absSquared() < sphere_radius * sphere_radius) {
+                            dens[IX(i,j,k)] = 0.5;
+                        }
+                }
+            }
+        }
+
+        }
     }
 
     // Set the densities everywhere to a specific value
@@ -71,6 +90,8 @@ public:
         w_source      = (float *) malloc ( size*sizeof(float) );
         dens        = (float *) malloc ( size*sizeof(float) );  
         dens_source   = (float *) malloc ( size*sizeof(float) );
+        temp        = (float *) malloc ( size*sizeof(float) );  
+        temp_source   = (float *) malloc ( size*sizeof(float) );
 
         if ( !u || !v || !w || !u_source || !v_source || !w_source || !dens || !dens_source ) {
             fprintf ( stderr, "cannot allocate data\n" );
@@ -85,7 +106,12 @@ public:
  protected:
     float * u, * v, *w, * u_source, * v_source, * w_source;
     float * dens, * dens_source;
+    float * temp, * temp_source;
     int M, N, O;
+
+    Vector3f sphere_center;
+    float sphere_radius;
+    bool doSphere = true;
 
     int addforce[3] = {0, 0, 0};
     int addsource = 0;
