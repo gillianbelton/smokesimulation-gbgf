@@ -14,7 +14,8 @@ int
 main(int argc, const char *argv[])
 {
     FluidSystem fluidSystem = FluidSystem(DIM, DIM, DIM);
-    fluidSystem.setDensityUniform(0.7f);
+    
+    //fluidSystem.setDensityUniform(0.7f);
 
     density_grid.resize(DIM);
     for (int i = 0; i < DIM; ++i) {
@@ -30,7 +31,7 @@ main(int argc, const char *argv[])
         for (int j = 0; j < 5; j+= 1)
         {
             //printf("step\n");
-            fluidSystem.takeStep(0.0f, 0.0f, 0.4f);
+            fluidSystem.takeStep(0.01f, 0.01f, 0.4f);
         }
 
         // Store fluid system values into density grid

@@ -53,7 +53,7 @@ public:
         int i, size=(M+2)*(N+2)*(O+2);
 
         for ( i=0 ; i<size ; i++ ) {
-            u[i] = v[i] = w[i] = u_prev[i] = v_prev[i] =w_prev[i] = dens[i] = dens_prev[i] = 0.0f;
+            u[i] = v[i] = w[i] = u_source[i] = v_source[i] =w_source[i] = dens[i] = dens_source[i] = 0.0f;
         }
 
         addforce[0] = addforce[1] = addforce[2] = 0;
@@ -66,13 +66,13 @@ public:
         u           = (float *) malloc ( size*sizeof(float) );
         v           = (float *) malloc ( size*sizeof(float) );
         w           = (float *) malloc ( size*sizeof(float) );
-        u_prev      = (float *) malloc ( size*sizeof(float) );
-        v_prev      = (float *) malloc ( size*sizeof(float) );
-        w_prev      = (float *) malloc ( size*sizeof(float) );
+        u_source      = (float *) malloc ( size*sizeof(float) );
+        v_source      = (float *) malloc ( size*sizeof(float) );
+        w_source      = (float *) malloc ( size*sizeof(float) );
         dens        = (float *) malloc ( size*sizeof(float) );  
-        dens_prev   = (float *) malloc ( size*sizeof(float) );
+        dens_source   = (float *) malloc ( size*sizeof(float) );
 
-        if ( !u || !v || !w || !u_prev || !v_prev || !w_prev || !dens || !dens_prev ) {
+        if ( !u || !v || !w || !u_source || !v_source || !w_source || !dens || !dens_source ) {
             fprintf ( stderr, "cannot allocate data\n" );
             return ( 0 );
         }
@@ -83,8 +83,8 @@ public:
 
 
  protected:
-    float * u, * v, *w, * u_prev, * v_prev, * w_prev;
-    float * dens, * dens_prev;
+    float * u, * v, *w, * u_source, * v_source, * w_source;
+    float * dens, * dens_source;
     int M, N, O;
 
     int addforce[3] = {0, 0, 0};
