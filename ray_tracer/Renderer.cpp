@@ -38,6 +38,10 @@ void Renderer::Render(string filename)
                 for (int j = 0; j < v.size(); ++j) {
                     Vector3f color = Vector3f(v[j], v[j], v[j]);
                     image.setPixel(x*100 + i, y*100 + j, color);
+                }
+            }     
+        }
+    }
 
 
     for (int x = 0; x < _grid_width; ++x) {
