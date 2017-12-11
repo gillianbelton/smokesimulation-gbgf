@@ -43,6 +43,7 @@ public:
                         Vector3f pos = Vector3f(i,j,k);
                         if ((pos - sphere_center).absSquared() < sphere_radius * sphere_radius) {
                             dens[IX(i,j,k)] = 0.5;
+                            v[IX(i,j,k)] = 10;
                         }
                 }
             }
