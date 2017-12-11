@@ -10,7 +10,8 @@
 using namespace std;
 
 const int PIXELS_PER_VOXEL = 10;
-const int PPV = PIXELS_PER_VOXEL;
+vector<vector<float>> voxelsInterp_Y;
+vector<vector<float>> voxelsInterp_X;
 
 
 Renderer::Renderer(vector<vector<vector<float>>> dg, int grid_dim) :
@@ -35,6 +36,18 @@ void Renderer::Render(string filename)
                 }
             }     
         }
+
+// ------------ my code -------------------
+    interpolateVoxels();
+
+    for (int x = 0; x < _grid_width; ++x) {
+        vector<float> v = voxelsInterp_Y[x];
+        for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
+            for (int j = 0; j < PIXELS_PER_VOXEL * _grid_width; ++j) {
+                Vector3f color = Vector3f(v[j], v[j], v[j]);
+                image.setPixel(x*PIXELS_PER_VOXEL + i, j, color); 
+            }
+        }     
     }
 
 
@@ -55,7 +68,7 @@ void Renderer::Render(string filename)
 }
 
 Vector3f Renderer::getDensitySum(int x, int y) {
-    
+
     float total = 0;
     
     float xf = x;
@@ -68,7 +81,7 @@ Vector3f Renderer::getDensitySum(int x, int y) {
         total += queryDensity(gridX, gridY, z);
     }
     total /= _grid_width;
-    return Vector3f(total, total, total);
+    return total;
 }
 
 float lerp(float a, float b, float t) {
@@ -135,58 +148,144 @@ float Renderer::queryDensity(float x, float y, float z) {
 }
 
 
-vector<float> Renderer::interpolate(int x, int y) {
-    std::vector<float> v;
-    //v.resize(100);
-    // interpolate pixel values
-    int k = y;
+// Vector3f Renderer::getDensity(int x, int y) {
+//     float total = 0;
+//     for (int z = 0; z < _grid_width; ++z) {
+//         total += _density_grid[x][y][z];
+//     }
+//     total /= _grid_width;
+//     return Vector3f(total, total, total);
+// }
 
-    float f_k = getDensitySum(x, y)[0];
+void Renderer::interpolateVoxels() {
+    //interpolate the along the X axis
+    for (int y = 0; y < _grid_width; ++y) {
+        voxelsInterp_X.push_back(interpolateX(y));
+    }
     
-    float f_kp1;
-    if (y != _grid_width - 1) {
-         f_kp1 = getDensitySum(x, y + 1)[0];
-    } else {
-        f_kp1 = f_k;
-    }
-    float f_kp2;
-    if (y < _grid_width - 2) {
-         f_kp2 = getDensitySum(x, y + 2)[0];
-    } else {
-        f_kp2 = f_kp1;
+    //interpolate the along the Y axis
+    for (int x = 0; x < _grid_width; ++x) {
+        voxelsInterp_Y.push_back(interpolateY(x));
     }
 
-    float f_k_1;
-    if (y != 0) {
-        f_k_1 = getDensitySum(x, y - 1)[0];
-    } else {
-        f_k_1 = f_k;
-    }
-     
-    float delta_k = f_kp1 - f_k;
-    float d_k = (f_kp1 - f_k_1) * 0.5;
-    float d_kp1 = (f_kp2 - f_k) * 0.5;
+}
 
-    if (delta_k == 0) {
-        d_k = 0;
-        d_kp1 = 0;
-    } else {
-        bool positive = delta_k > 0;
-        if (d_k > 0 != positive) {
+
+// Vector3f Renderer::getDensityInterpolated(int x, int y) {
+//     float v = (voxelsInterp_Y[x][y] + voxelsInterp_Y[y][x] ) * 0.5;
+//     return Vector3f(v, v, v);
+// }
+
+
+vector<float> Renderer::interpolateY(int x) {
+    vector<float> v;
+    for (int y = 0; y < _grid_width; ++y){
+         // interpolate pixel values
+
+        float f_k = getVoxelDensity(x, y);
+        
+        float f_kp1;
+        if (y < _grid_width - 1) {
+             f_kp1 = getVoxelDensity(x, y + 1);
+        } else {
+            f_kp1 = f_k;
+        }
+        float f_kp2;
+        if (y < _grid_width - 2) {
+             f_kp2 = getVoxelDensity(x, y + 2);
+        } else {
+            f_kp2 = f_kp1;
+        }
+
+        float f_k_1;
+        if (y > 0) {
+            f_k_1 = getVoxelDensity(x, y - 1);
+        } else {
+            f_k_1 = f_k;
+        }
+         
+        float delta_k = f_kp1 - f_k;
+        float d_k = (f_kp1 - f_k_1) * 0.5;
+        float d_kp1 = (f_kp2 - f_k) * 0.5;
+
+        if (delta_k == 0) {
             d_k = 0;
-        } else if (d_kp1 > 0 != positive) {
             d_kp1 = 0;
+        } else {
+            bool positive = delta_k > 0;
+            if (d_k > 0 != positive) {
+                d_k = 0;
+            } else if (d_kp1 > 0 != positive) {
+                d_kp1 = 0;
+            }
+        }
+
+        float a_0 = f_k;
+        float a_1 = d_k;
+        float a_2 = 3 * delta_k - 2 * d_k - d_kp1;
+        float a_3 = d_k + d_kp1 - delta_k;
+
+        for (int i = 0; i < PIXELS_PER_VOXEL; ++i) {
+            float new_d = a_3 * pow(i / PIXELS_PER_VOXEL, 3) + a_2 * pow(i / PIXELS_PER_VOXEL, 2) + a_1 * i / PIXELS_PER_VOXEL + a_0;
+            v.push_back(new_d);
         }
     }
 
-    float a_0 = f_k;
-    float a_1 = d_k;
-    float a_2 = 3 * delta_k - 2 * d_k - d_kp1;
-    float a_3 = d_k + d_kp1 - delta_k;
+    return v;
+}
 
-    for (int i = 0; i < PPV; ++i) {
-        float new_d = a_3 * pow(i / PPV, 3) + a_2 * pow(i / PPV, 2) + a_1 * i / PPV + a_0;
-        v.push_back(new_d);
+vector<float> Renderer::interpolateX(int y) {
+    vector<float> v;
+    for (int x = 0; x < _grid_width; ++x){
+         // interpolate pixel values
+
+        float f_k = getVoxelDensity(x, y);
+        
+        float f_kp1;
+        if (x < _grid_width - 1) {
+             f_kp1 = getVoxelDensity(x + 1, y);
+        } else {
+            f_kp1 = f_k;
+        }
+        float f_kp2;
+        if (x < _grid_width - 2) {
+             f_kp2 = getVoxelDensity(x + 2, y);
+        } else {
+            f_kp2 = f_kp1;
+        }
+
+        float f_k_1;
+        if (x > 0) {
+            f_k_1 = getVoxelDensity(x - 1, y);
+        } else {
+            f_k_1 = f_k;
+        }
+         
+        float delta_k = f_kp1 - f_k;
+        float d_k = (f_kp1 - f_k_1) * 0.5;
+        float d_kp1 = (f_kp2 - f_k) * 0.5;
+
+        if (delta_k == 0) {
+            d_k = 0;
+            d_kp1 = 0;
+        } else {
+            bool positive = delta_k > 0;
+            if (d_k > 0 != positive) {
+                d_k = 0;
+            } else if (d_kp1 > 0 != positive) {
+                d_kp1 = 0;
+            }
+        }
+
+        float a_0 = f_k;
+        float a_1 = d_k;
+        float a_2 = 3 * delta_k - 2 * d_k - d_kp1;
+        float a_3 = d_k + d_kp1 - delta_k;
+
+        for (int i = 0; i < PIXELS_PER_VOXEL; ++i) {
+            float new_d = a_3 * pow(i / PIXELS_PER_VOXEL, 3) + a_2 * pow(i / PIXELS_PER_VOXEL, 2) + a_1 * i / PIXELS_PER_VOXEL + a_0;
+            v.push_back(new_d);
+        }
     }
 
     return v;
