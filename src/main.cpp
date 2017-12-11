@@ -29,11 +29,9 @@ main(int argc, const char *argv[])
         string filename = "smoke_file_" + std::to_string(i) + ".png";
         printf("filename: %s\n", filename.c_str());
         // Take fluid system steps
-        for (int j = 0; j < 13; j+= 1)
-        {
-            //printf("step\n");
-            fluidSystem.takeStep(0.001f, 0.0f, 0.4f);
-        }
+        
+        fluidSystem.takeStep(0.00f, 0.0f, 0.4f);
+
 
         // Store fluid system values into density grid
         for (int x = 0; x < DIM; ++x) {
