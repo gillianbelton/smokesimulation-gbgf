@@ -15,6 +15,8 @@ class Renderer
     Renderer(vector<vector<vector<float>>> dg, int grid_dim);
     void Render(string filename);
     Vector3f getDensity(int x, int y);
+    vector<float> interpolate(int x, int y);
+
     vector<vector<vector<float>>> _density_grid;
     int _grid_width;
     int _pic_width;

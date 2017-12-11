@@ -271,6 +271,8 @@ Ray.h
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Ray.h
 limits
 -
+math.h
+-
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/ray_tracer/Renderer.h
 string
