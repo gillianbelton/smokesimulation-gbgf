@@ -30,9 +30,8 @@ main(int argc, const char *argv[])
         printf("filename: %s\n", filename.c_str());
         // Take fluid system steps
         
-        fluidSystem.takeStep(0.00f, 0.0f, 0.4f);
-
-
+        
+        std::cout << "about to transfer grid" << std::endl;
         // Store fluid system values into density grid
         for (int x = 0; x < DIM; ++x) {
            for (int y = 0; y < DIM; ++y) {
@@ -42,8 +41,12 @@ main(int argc, const char *argv[])
             } 
         }
 
+        std::cout << "about to render" << std::endl;
+
         Renderer renderer(density_grid, DIM);
         renderer.Render(filename);
+
+        //fluidSystem.takeStep(0.00f, 0.0f, 0.4f);
     }
 
     return 0;

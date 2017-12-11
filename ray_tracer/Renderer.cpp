@@ -9,11 +9,13 @@
 
 using namespace std;
 
+const int PIXELS_PER_VOXEL = 10;
+
 
 Renderer::Renderer(vector<vector<vector<float>>> dg, int grid_dim) :
     _density_grid(dg),
     _grid_width(grid_dim),
-    _pic_width(grid_dim * 100)
+    _pic_width(grid_dim * PIXELS_PER_VOXEL)
 {
 }
 
@@ -36,17 +38,24 @@ void Renderer::Render(string filename)
                 for (int j = 0; j < v.size(); ++j) {
                     Vector3f color = Vector3f(v[j], v[j], v[j]);
                     image.setPixel(x*100 + i, y*100 + j, color);
-                }
-            }
 
-            // for (int i = 0; i < 100; ++i) { 
-            //     for (int j = 0; j < 100; ++j) {
-            //         image.setPixel(x*100 + i, y*100 + j, color); 
-            //     }
-            // }           
+
+    for (int x = 0; x < _grid_width; ++x) {
+        for (int y = 0; y < _grid_width; ++y) {
+            //Vector3f color = getDensity(x, y);
+            vector<float> v = interpolate(x, y);
+            for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
+                for (int j = 0; j < PIXELS_PER_VOXEL; ++j) {
+                    Vector3f color = Vector3f(v[j], v[j], v[j]);
+                    image.setPixel(x*PIXELS_PER_VOXEL + i, y*PIXELS_PER_VOXEL + j, color); 
+                }
+            }     
         }
     }
+
+    std::cout << "about to save file" << std::endl;
     image.savePNG(filename);
+    std::cout << "done saving file" << std::endl;
 }
 
 Vector3f Renderer::getDensity(int x, int y) {

@@ -10,6 +10,11 @@
 
 #define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k))
 
+//constants for buoyancy equation
+const float alpha = 1.0f;
+const float beta = 1.0f;
+
+
 float rand_uniform(float low, float hi) {
    float abs = hi - low;
    float f = (float)rand() / RAND_MAX;
@@ -22,8 +27,20 @@ void FluidSystem::takeStep(float diff, float visc, float dt){
     // vel_step ( int M, int N, int O, float * u, float * v,  float * w, float * u0, float * v0, float * w0, float visc, float dt )
     // dens_step ( int M, int N, int O, float * x, float * x0, float * u, float * v, float * w, float diff, float dt )
     //dens_source[IX(M/2,N/2,O/2)] = 100;
+
+    int size=(M+2)*(N+2)*(O+2);
+    for (int i = 0; i < size; i+= 1) {
+      //add gravity buoyancy force
+      v_source[i] -= alpha * dens[i];
+      //add temy buoyancy force
+      v_source[i] += beta * (temp[i] - 0.0f);
+    }
+
+
     vel_step (M, N, O, u, v, w, u_source, v_source, w_source, visc, dt);
     dens_step (M, N, O, dens, dens_source, u, v, w, diff, dt);
+    //advect temperature
+    dens_step (M, N, O, temp, temp_source, u, v, w, diff, dt);
 }
 
 void FluidSystem::print() {
