@@ -10,8 +10,6 @@
 using namespace std;
 
 const int PIXELS_PER_VOXEL = 10;
-vector<vector<float>> voxelsInterp_Y;
-vector<vector<float>> voxelsInterp_X;
 
 
 Renderer::Renderer(vector<vector<vector<float>>> dg, int grid_dim) :
@@ -26,6 +24,24 @@ void Renderer::Render(string filename)
 {
     Image image(_pic_width, _pic_width);
 
+
+
+// ------------ my code -------------------
+    //interpolateVoxels();
+
+    vector<vector<float>> voxelsInterp_Y;
+    vector<vector<float>> voxelsInterp_X;
+
+    //interpolate the along the X axis
+    for (int y = 0; y < _grid_width; ++y) {
+        voxelsInterp_X.push_back(interpolateX(y));
+    }
+    
+    //interpolate the along the Y axis
+    for (int x = 0; x < _grid_width; ++x) {
+        voxelsInterp_Y.push_back(interpolateY(x));
+    }
+
     for (int x = 0; x < _grid_width; ++x) {
         for (int y = 0; y < _grid_width; ++y) {
             //for each grid point, go through the pixels in between
@@ -38,31 +54,14 @@ void Renderer::Render(string filename)
         }
     }
 
-// ------------ my code -------------------
-    interpolateVoxels();
-
-    for (int x = 0; x < _grid_width; ++x) {
-        vector<float> v = voxelsInterp_Y[x];
-        for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
-            for (int j = 0; j < PIXELS_PER_VOXEL * _grid_width; ++j) {
-                Vector3f color = Vector3f(v[j], v[j], v[j]);
-                image.setPixel(x*PIXELS_PER_VOXEL + i, j, color); 
-            }
-        }     
-    }
-
-
     // for (int x = 0; x < _grid_width; ++x) {
-    //     for (int y = 0; y < _grid_width; ++y) {
-    //         //Vector3f color = getDensitySum(x, y);
-    //         vector<float> v = interpolate(x, y);
-    //         for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
-    //             for (int j = 0; j < PIXELS_PER_VOXEL; ++j) {
-    //                 Vector3f color = Vector3f(v[j], v[j], v[j]);
-    //                 image.setPixel(x*PIXELS_PER_VOXEL + i, y*PIXELS_PER_VOXEL + j, color); 
-    //             }
-    //         }     
-    //     }
+    //     vector<float> v = voxelsInterp_Y[x];
+    //     for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
+    //         for (int j = 0; j < PIXELS_PER_VOXEL * _grid_width; ++j) {
+    //             Vector3f color = Vector3f(v[j], v[j], v[j]);
+    //             image.setPixel(x*PIXELS_PER_VOXEL + i, j, color); 
+    //         }
+    //     }     
     // }
 
     image.savePNG(filename);
@@ -71,15 +70,9 @@ void Renderer::Render(string filename)
 Vector3f Renderer::getDensitySum(int x, int y) {
 
     float total = 0;
-    
-    float xf = x;
-    float yf = y;
-
-    float gridX = xf / PIXELS_PER_VOXEL;
-    float gridY = yf / PIXELS_PER_VOXEL;
 
     for (float z = 0; z < _grid_width; z += 1) {
-        total += queryDensity(gridX, gridY, z);
+        total += queryDensity(x, y, z);
     }
     total /= _grid_width;
     return Vector3f(total, total, total);
@@ -87,6 +80,10 @@ Vector3f Renderer::getDensitySum(int x, int y) {
 
 float lerp(float a, float b, float t) {
     return (a * (1 - t)) + (b * t);
+}
+
+float getMCInterpolation(float a, float b, float t) {
+
 }
 
 
@@ -146,29 +143,6 @@ float Renderer::queryDensity(float x, float y, float z) {
     //interpolate in z
     float c = lerp(c0, c1, zd);
     return c;
-}
-
-
-// Vector3f Renderer::getDensity(int x, int y) {
-//     float total = 0;
-//     for (int z = 0; z < _grid_width; ++z) {
-//         total += _density_grid[x][y][z];
-//     }
-//     total /= _grid_width;
-//     return Vector3f(total, total, total);
-// }
-
-void Renderer::interpolateVoxels() {
-    //interpolate the along the X axis
-    for (int y = 0; y < _grid_width; ++y) {
-        voxelsInterp_X.push_back(interpolateX(y));
-    }
-    
-    //interpolate the along the Y axis
-    for (int x = 0; x < _grid_width; ++x) {
-        voxelsInterp_Y.push_back(interpolateY(x));
-    }
-
 }
 
 
