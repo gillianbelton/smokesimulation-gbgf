@@ -41,11 +41,13 @@ public:
                 for (int j = 0; j < N; j += 1) {
                     for (int k = 0; k < O; k+= 1) {
                         Vector3f pos = Vector3f(i,j,k);
+                        dens_source[IX(i,j,k)] = 0;
                         if ((pos - sphere_center).absSquared() < sphere_radius * sphere_radius) {
-                            dens[IX(i,j,k)] = 0.5;
-                            v[IX(i,j,k)] = 10;
+                            dens[IX(i,j,k)] = 2;
+                            v[IX(i,j,k)] = 20;
                             temp[IX(i,j,k)] = 4;
                         }
+                        totalMass += dens[IX(i,j,k)];
                 }
             }
         }
@@ -114,6 +116,8 @@ public:
     Vector3f sphere_center;
     float sphere_radius;
     bool doSphere = true;
+
+    float totalMass;
 
     int addforce[3] = {0, 0, 0};
     int addsource = 0;

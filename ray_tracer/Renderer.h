@@ -14,7 +14,8 @@ class Renderer
     // Instantiates a renderer for the given scene.
     Renderer(vector<vector<vector<float>>> dg, int grid_dim);
     void Render(string filename);
-    Vector3f getDensity(int x, int y);
+    Vector3f getDensitySum(int x, int y);
+    float queryDensity(float x, float y, float z);
     vector<float> interpolate(int x, int y);
 
     vector<vector<vector<float>>> _density_grid;

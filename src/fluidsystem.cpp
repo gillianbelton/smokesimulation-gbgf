@@ -41,6 +41,23 @@ void FluidSystem::takeStep(float diff, float visc, float dt){
     dens_step (M, N, O, dens, dens_source, u, v, w, diff, dt);
     //advect temperature
     dens_step (M, N, O, temp, temp_source, u, v, w, diff, dt);
+
+    float currMass = 0;
+    for (int i = 0; i < M; i += 1) {
+                for (int j = 0; j < N; j += 1) {
+                    for (int k = 0; k < O; k+= 1) {
+                        currMass += dens[IX(i,j,k)];
+                }
+            }
+          }
+
+    for (int i = 0; i < M; i += 1) {
+                for (int j = 0; j < N; j += 1) {
+                    for (int k = 0; k < O; k+= 1) {
+                        dens[IX(i,j,k)] *= totalMass / currMass;
+                }
+            }
+          }
 }
 
 void FluidSystem::print() {

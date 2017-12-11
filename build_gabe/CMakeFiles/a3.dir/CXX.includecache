@@ -271,6 +271,8 @@ Ray.h
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Ray.h
 limits
 -
+math.h
+-
 
 /Users/gub/Dropbox (MIT)/6.837_Graphics/Final Project/smokesimulation-gbgf/ray_tracer/Renderer.h
 string

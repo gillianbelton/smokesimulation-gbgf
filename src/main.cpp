@@ -6,8 +6,8 @@
 
 using namespace std;
 
-const int DIM = 100;
-const int NUM_STEP = 10;
+const int DIM = 70;
+const int NUM_STEP = 100;
 vector<vector<vector<float>>> density_grid;
 
 int
@@ -43,7 +43,7 @@ main(int argc, const char *argv[])
         Renderer renderer(density_grid, DIM);
         renderer.Render(filename);
 
-        fluidSystem.takeStep(0.00f, 0.0f, 0.4f);
+        fluidSystem.takeStep(0.00f, 0.0f, 0.01f);
     }
 
     return 0;
