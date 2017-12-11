@@ -36,6 +36,7 @@ void Renderer::Render(string filename)
                 }
             }     
         }
+    }
 
 // ------------ my code -------------------
     interpolateVoxels();
@@ -81,7 +82,7 @@ Vector3f Renderer::getDensitySum(int x, int y) {
         total += queryDensity(gridX, gridY, z);
     }
     total /= _grid_width;
-    return total;
+    return Vector3f(total, total, total);
 }
 
 float lerp(float a, float b, float t) {
@@ -175,6 +176,15 @@ void Renderer::interpolateVoxels() {
 //     float v = (voxelsInterp_Y[x][y] + voxelsInterp_Y[y][x] ) * 0.5;
 //     return Vector3f(v, v, v);
 // }
+
+float Renderer::getVoxelDensity(int x, int y) {
+    float total = 0;
+    for (int z = 0; z < _grid_width; ++z) {
+        total += _density_grid[x][y][z];
+    }
+    total /= _grid_width;
+    return total;
+}
 
 
 vector<float> Renderer::interpolateY(int x) {
