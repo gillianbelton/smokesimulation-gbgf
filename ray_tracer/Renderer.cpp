@@ -10,6 +10,7 @@
 using namespace std;
 
 const int PIXELS_PER_VOXEL = 10;
+const int PPV = PIXELS_PER_VOXEL;
 
 
 Renderer::Renderer(vector<vector<vector<float>>> dg, int grid_dim) :
@@ -34,20 +35,6 @@ void Renderer::Render(string filename)
         for (int y = 0; y < _grid_width; ++y) {
             //Vector3f color = getDensity(x, y);
             vector<float> v = interpolate(x, y);
-            for (int i = 0; i < 100; ++i) {
-                for (int j = 0; j < v.size(); ++j) {
-                    Vector3f color = Vector3f(v[j], v[j], v[j]);
-                    image.setPixel(x*100 + i, y*100 + j, color);
-                }
-            }     
-        }
-    }
-
-
-    for (int x = 0; x < _grid_width; ++x) {
-        for (int y = 0; y < _grid_width; ++y) {
-            //Vector3f color = getDensity(x, y);
-            vector<float> v = interpolate(x, y);
             for (int i = 0; i < PIXELS_PER_VOXEL; ++i) { 
                 for (int j = 0; j < PIXELS_PER_VOXEL; ++j) {
                     Vector3f color = Vector3f(v[j], v[j], v[j]);
@@ -57,9 +44,7 @@ void Renderer::Render(string filename)
         }
     }
 
-    std::cout << "about to save file" << std::endl;
     image.savePNG(filename);
-    std::cout << "done saving file" << std::endl;
 }
 
 Vector3f Renderer::getDensity(int x, int y) {
@@ -120,8 +105,8 @@ vector<float> Renderer::interpolate(int x, int y) {
     float a_2 = 3 * delta_k - 2 * d_k - d_kp1;
     float a_3 = d_k + d_kp1 - delta_k;
 
-    for (int i = 0; i < 100; ++i) {
-        float new_d = a_3 * pow(i / 100.0, 3) + a_2 * pow(i / 100.0, 2) + a_1 * i / 100.0 + a_0;
+    for (int i = 0; i < PPV; ++i) {
+        float new_d = a_3 * pow(i / PPV, 3) + a_2 * pow(i / PPV, 2) + a_1 * i / PPV + a_0;
         v.push_back(new_d);
     }
 
