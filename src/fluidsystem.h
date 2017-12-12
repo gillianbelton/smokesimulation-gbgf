@@ -33,7 +33,7 @@ public:
 
         if (doSphere) {
             //Create sphere size, position
-            sphere_radius = M / 4;
+            sphere_radius = M / 2;
             sphere_center = Vector3f(M/2, N/2, O/2);
 
             //Populate sphere with density, velocity

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const int DIM = 70;
+const int DIM = 10;
 const int NUM_STEP = 100;
 vector<vector<vector<float>>> density_grid;
 
