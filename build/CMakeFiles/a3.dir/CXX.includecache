@@ -353,6 +353,8 @@ cstdint
 -
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsolver.cpp
+algorithm
+-
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsystem.cpp
 fluidsolver.cpp
@@ -369,6 +371,8 @@ cstdio
 -
 vector
 -
+vecmath.h
+-
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/fluidsystem.h
 vector
@@ -378,6 +382,8 @@ vecmath.h
 cstdint
 -
 stdlib.h
+-
+iostream
 -
 
 /Users/Gillian/Desktop/School/MIT17_18/6.837/FinalProject/smokesimulation-gbgf/src/gl.h
