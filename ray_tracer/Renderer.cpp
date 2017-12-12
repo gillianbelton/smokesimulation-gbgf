@@ -29,8 +29,8 @@ void Renderer::Render(string filename)
 // ------------ my code -------------------
     //interpolateVoxels();
 
-    vector<vector<float>> voxelsInterp_Y;
-    vector<vector<float>> voxelsInterp_X;
+    //vector<vector<float>> voxelsInterp_Y;
+    //vector<vector<float>> voxelsInterp_X;
 
     // //interpolate the along the X axis
     // for (int y = 0; y < _grid_width; ++y) {

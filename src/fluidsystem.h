@@ -6,6 +6,9 @@
 #include <vecmath.h>
 #include <cstdint>
 #include <stdlib.h> // pulls in declaration of malloc, free
+#include <iostream>
+
+using namespace std;
 
 // helper for uniform distribution
 float rand_uniform(float low, float hi);
@@ -21,6 +24,8 @@ public:
     // Advance the system by one time step
     void takeStep(float diff, float visc, float dt);
 
+    int get_ind (int x, int y, int z);
+
     // Debug the densities of the system
     void print();
 
@@ -30,6 +35,23 @@ public:
           N(N),
           O(O) {
         allocate_data();
+
+        for (int i=0 ; i<M ; i++ ) { for (int j=0 ; j<N ; j++ ) { for (int k=0 ; k<O ; k++ ) {
+            u[IX(i,j,k)] = 0;
+            v[IX(i,j,k)] = 0;
+            w[IX(i,j,k)] = 0;
+
+            u_source[IX(i,j,k)] = 0;
+            v_source[IX(i,j,k)] = 0;
+            w_source[IX(i,j,k)] = 0;
+
+            dens[IX(i,j,k)] = 0;
+            dens_source[IX(i,j,k)] = 0;
+
+            temp[IX(i,j,k)] = 0;
+            temp_source[IX(i,j,k)] = 0;
+        } } }
+
 
         if (doSphere) {
             //Create sphere size, position
@@ -41,17 +63,16 @@ public:
                 for (int j = 0; j < N; j += 1) {
                     for (int k = 0; k < O; k+= 1) {
                         Vector3f pos = Vector3f(i,j,k);
-                        dens_source[IX(i,j,k)] = 0;
+
                         if ((pos - sphere_center).absSquared() < sphere_radius * sphere_radius) {
                             dens[IX(i,j,k)] = 2;
                             v[IX(i,j,k)] = 20;
                             temp[IX(i,j,k)] = 4;
                         }
                         totalMass += dens[IX(i,j,k)];
+                    }
                 }
             }
-        }
-
         }
     }
 

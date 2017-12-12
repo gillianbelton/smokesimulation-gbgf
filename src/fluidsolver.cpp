@@ -10,10 +10,19 @@ Reference: Jos Stam, "Real-Time Fluid Dynamics for Games". Proceedings of the Ga
 // x0 is the density array from the previous time step
 // s is the density source
 
-#define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k))
+#define IX(i,j,k) get_ind(i,j,k,M,N,O)
 #define SWAP(x0,x) {float * tmp=x0;x0=x;x=tmp;}
 #define MAX(a,b)            (((a) > (b)) ? (a) : (b))
 #define LINEARSOLVERTIMES 10
+
+#include <algorithm>
+
+//Performs the same function as IX, but makes sure the indices are within range
+int get_ind (int x, int y, int z, int M, int N, int O){
+  x = std::max(0, x); y = std::max(0,y); z = std::max(0,z);
+  x = std::min(M, x); y = std::min(N,y); z = std::min(O,z);
+  return ((x)+(M+2)*(y) + (M+2)*(N+2)*(z));
+}
 
 
 void add_source ( int M, int N, int O, float * x, float * s, float dt )
