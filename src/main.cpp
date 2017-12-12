@@ -6,8 +6,13 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 const int DIM = 70;
 const int NUM_STEP = 15;
+=======
+const int DIM = 30;
+const int NUM_STEP = 100;
+>>>>>>> origin/master
 vector<vector<vector<float>>> density_grid;
 
 int

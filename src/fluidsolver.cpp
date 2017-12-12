@@ -10,10 +10,19 @@ Reference: Jos Stam, "Real-Time Fluid Dynamics for Games". Proceedings of the Ga
 // x0 is the density array from the previous time step
 // s is the density source
 
-#define IX(i,j,k) ((i)+(M+2)*(j) + (M+2)*(N+2)*(k))
+#define IX(i,j,k) get_ind(i,j,k,M,N,O)
 #define SWAP(x0,x) {float * tmp=x0;x0=x;x=tmp;}
 #define MAX(a,b)            (((a) > (b)) ? (a) : (b))
 #define LINEARSOLVERTIMES 10
+
+#include <algorithm>
+
+//Performs the same function as IX, but makes sure the indices are within range
+int get_ind (int x, int y, int z, int M, int N, int O){
+  x = std::max(0, x); y = std::max(0,y); z = std::max(0,z);
+  x = std::min(M, x); y = std::min(N,y); z = std::min(O,z);
+  return ((x)+(M+2)*(y) + (M+2)*(N+2)*(z));
+}
 
 
 void add_source ( int M, int N, int O, float * x, float * s, float dt )
@@ -28,22 +37,22 @@ void  set_bnd ( int M, int N, int O, int b, float * x )
 
 	int i, j;
 
-	for ( i=1 ; i<=M ; i++ ) {
-		for ( j=1 ; j<=N ; j++ ) {
+	for ( i=0 ; i<M ; i++ ) {
+		for ( j=0 ; j<N ; j++ ) {
 			x[IX(i,j,0 )] = b==3 ? -x[IX(i,j,1)] : x[IX(i,j,1)];
 			x[IX(i,j,O+1)] = b==3 ? -x[IX(i,j,O)] : x[IX(i,j,O)];
 		}
 	}
 
-    for ( i=1 ; i<=N ; i++ ) {
-        for ( j=1 ; j<=O ; j++ ) {
+    for ( i=0 ; i<N ; i++ ) {
+        for ( j=0 ; j<O ; j++ ) {
             x[IX(0  ,i, j)] = b==1 ? -x[IX(1,i,j)] : x[IX(1,i,j)];
             x[IX(M+1,i, j)] = b==1 ? -x[IX(M,i,j)] : x[IX(M,i,j)];
         }
     }
 
-    for ( i=1 ; i<=M ; i++ ) {
-        for ( j=1 ; j<=O ; j++ ) {
+    for ( i=0 ; i<M ; i++ ) {
+        for ( j=0 ; j<O ; j++ ) {
             x[IX(i,0,j )] = b==2 ? -x[IX(i,1,j)] : x[IX(i,1,j)];
             x[IX(i,N+1,j)] = b==2 ? -x[IX(i,N,j)] : x[IX(i,N,j)];
         }
@@ -69,7 +78,7 @@ void lin_solve ( int M, int N, int O, int b, float * x, float * x0, float a, flo
 	// iterate the solver
 	for ( l=0 ; l<LINEARSOLVERTIMES ; l++ ) {
 		// update for each cell
-		for ( i=1 ; i<=M ; i++ ) { for ( j=1 ; j<=N ; j++ ) { for ( k=1 ; k<=O ; k++ ) {
+		for ( i=0 ; i<M ; i++ ) { for ( j=0 ; j<N ; j++ ) { for ( k=0 ; k<O ; k++ ) {
 			x[IX(i,j,k)] = (x0[IX(i,j,k)] + a*(x[IX(i-1,j,k)]+x[IX(i+1,j,k)]+x[IX(i,j-1,k)]+x[IX(i,j+1,k)]+x[IX(i,j,k-1)]+x[IX(i,j,k+1)]))/c;
 		}}}
         set_bnd ( M, N, O, b, x );
@@ -90,7 +99,7 @@ void advect (  int M, int N, int O, int b, float * d, float * d0, float * u, flo
 	
 	dtx=dty=dtz=dt*MAX(MAX(M, N), MAX(N, O));
 
-	for ( i=1 ; i<=M ; i++ ) { for ( j=1 ; j<=N ; j++ ) { for ( k=1 ; k<=O ; k++ ) {
+	for ( i=0 ; i<M ; i++ ) { for ( j=0 ; j<N ; j++ ) { for ( k=0 ; k<O ; k++ ) {
 		x = i-dtx*u[IX(i,j,k)]; y = j-dty*v[IX(i,j,k)]; z = k-dtz*w[IX(i,j,k)];
 		if (x<0.5f) x=0.5f; if (x>M+0.5f) x=M+0.5f; i0=(int)x; i1=i0+1;
 		if (y<0.5f) y=0.5f; if (y>N+0.5f) y=N+0.5f; j0=(int)y; j1=j0+1;
@@ -108,7 +117,7 @@ void project ( int M, int N, int O, float * u, float * v, float * w, float * p, 
 {
 	int i, j, k;
 
-	for ( i=1 ; i<=M ; i++ ) { for ( j=1 ; j<=N ; j++ ) { for ( k=1 ; k<=O ; k++ ) {
+	for ( i=0 ; i<M ; i++ ) { for ( j=0 ; j<N ; j++ ) { for ( k=0 ; k<O ; k++ ) {
 		div[IX(i,j,k)] = -1.0/3.0*((u[IX(i+1,j,k)]-u[IX(i-1,j,k)])/M+(v[IX(i,j+1,k)]-v[IX(i,j-1,k)])/M+(w[IX(i,j,k+1)]-w[IX(i,j,k-1)])/M);
 		p[IX(i,j,k)] = 0;
 	}}}	
@@ -117,7 +126,7 @@ void project ( int M, int N, int O, float * u, float * v, float * w, float * p, 
 
 	lin_solve ( M, N, O, 0, p, div, 1, 6 );
 
-	for ( i=1 ; i<=M ; i++ ) { for ( j=1 ; j<=N ; j++ ) { for ( k=1 ; k<=O ; k++ ) {
+	for ( i=0 ; i<M ; i++ ) { for ( j=0 ; j<N ; j++ ) { for ( k=0 ; k<O ; k++ ) {
 		u[IX(i,j,k)] -= 0.5f*M*(p[IX(i+1,j,k)]-p[IX(i-1,j,k)]);
 		v[IX(i,j,k)] -= 0.5f*M*(p[IX(i,j+1,k)]-p[IX(i,j-1,k)]);
 		w[IX(i,j,k)] -= 0.5f*M*(p[IX(i,j,k+1)]-p[IX(i,j,k-1)]);

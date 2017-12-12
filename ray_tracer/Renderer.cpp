@@ -29,19 +29,6 @@ void Renderer::Render(string filename)
 // ------------ my code -------------------
     //interpolateVoxels();
 
-    vector<vector<float>> voxelsInterp_Y;
-    vector<vector<float>> voxelsInterp_X;
-
-    //interpolate the along the X axis
-    for (int y = 0; y < _grid_width; ++y) {
-        voxelsInterp_X.push_back(interpolateX(y));
-    }
-    
-    //interpolate the along the Y axis
-    for (int x = 0; x < _grid_width; ++x) {
-        voxelsInterp_Y.push_back(interpolateY(x));
-    }
-
     for (int x = 0; x < _grid_width; ++x) {
         for (int y = 0; y < _grid_width; ++y) {
             //for each grid point, go through the pixels in between
@@ -71,8 +58,14 @@ Vector3f Renderer::getDensitySum(int x, int y) {
 
     float total = 0;
 
+    float xf = (float) x;
+    float yf = (float) y;
+
+    float gridX = xf / PIXELS_PER_VOXEL;
+    float gridY = yf / PIXELS_PER_VOXEL;
+
     for (float z = 0; z < _grid_width; z += 1) {
-        total += queryDensity(x, y, z);
+        total += queryDensity(gridX,gridY, z);
     }
     total /= _grid_width;
     return Vector3f(total, total, total);
@@ -274,5 +267,3 @@ vector<float> Renderer::interpolateX(int y) {
 
     return v;
 }
-
-
